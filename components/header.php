@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Westo - Responsive HTML 5 Template</title>
+    <title>Anambra State Union - Welcome</title>
 
     <!-- responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,8 +54,8 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/images/resources/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/images/resources/logo.png" sizes="16x16">
 
     <!-- Fixing Internet Explorer-->
     <!--[if lt IE 9]>
@@ -162,9 +162,9 @@
 
                     <div class="header-top__right">
                         <div class="header-button-style1">
-                            <a class="btn-one" href="contact">
+                            <a class="btn-one" target="_blank" href="https://forms.gle/V7r1kJEX3T9DKf1y6">
                                     <span class="txt">
-                                        Contact ASU<i class="icon-refresh arrow"></i>
+                                        New member? Register<i class="icon-refresh arrow"></i>
                                     </span>
                             </a>
                         </div>
@@ -227,7 +227,7 @@
                                             <ul>
                                                 <li><a href="anambra-state">About Anambra State</a></li>
                                                 <li><a href="about">About ASU Uk & Ireland</a></li>
-                                                <li><a href="teams">Our Executives</a></li>
+                                                <li><a href="executives">Our Executives</a></li>
                                             </ul>
                                         </li>
 
@@ -299,8 +299,8 @@
             <div class="menu-backdrop"></div>
             <div class="close-btn"><span class="icon fa fa-times-circle"></span></div>
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/resources/mobilemenu-logo.png"
-                                                                alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.html"><img src="assets/images/resources/logo.png"
+                                                                alt="Mobile ASU Logo" title="" width="160"></a></div>
                 <div class="menu-outer">
                     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 </div>

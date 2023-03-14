@@ -294,7 +294,7 @@
     bottom: 0;
     right: 0;
     opacity: 0.80;
-    background-color: var(--thm-base);
+    /* background-color: var(--thm-base); */
     z-index: 1;
     transform: scale(0.0);
     transform-origin: bottom;

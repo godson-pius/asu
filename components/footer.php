@@ -4,7 +4,7 @@
 
     <div class="footer-top">
         <div class="container">
-            <div class="subscribe-content-box">
+            <div class="subscribe-content-box mt-5">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
                         <div class="subscribe-title">
@@ -142,7 +142,7 @@
         <div class="container">
             <div class="bottom-inner">
                 <div class="copyright">
-                    <p>Copyright &copy; 2022 <a href="index.html">Westo</a> All Rights Reserved.</p>
+                    <p>Copyright &copy; <?= date("Y"); ?> <a href="index.html">ASU Uk.</a> All Rights Reserved.</p>
                 </div>
             </div>
         </div>
