@@ -129,24 +129,6 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                 </div>
                             </div>
                             <!--End Single Team Style1-->
-                            
-                            <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
-                                <div class="img-holder">
-                                    <div class="inner">
-                                        <img src="assets/images/team/team-v1-3.jpg" alt="" />
-                                    </div>
-                                    <div class="title-holder text-center">
-                                        <h2><a href="#">Her Excellency Mrs Victoria Eberendu</a></h2>
-                                        <h3>Treasurer</h3>
-                                        <div class="overlay-title">
-                                            <h2><a href="#">Her Excellency Mrs Victoria Eberendu</a></h2>
-                                            <h3>Treasurer</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Single Team Style1-->
 
                             <!--Start Single Team Style1-->
                             <div class="single-team-style1">
