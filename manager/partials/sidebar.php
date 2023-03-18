@@ -28,7 +28,7 @@
           </li>
           
           <li>
-            <a href="./requests">
+            <a href="./news">
               <i class="bi bi-circle"></i><span>All News</span>
             </a>
           </li>
@@ -41,7 +41,7 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="./contacts">
+            <a href="./messages">
               <i class="bi bi-circle"></i><span>View all</span>
             </a>
           </li>
@@ -56,14 +56,33 @@
             </a>
             <ul id="teams" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="./teams">
+                    <a href="./events">
                         <i class="bi bi-circle"></i><span>View all</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="./add-teams">
+                    <a href="./create-event">
                         <i class="bi bi-circle"></i><span>Add New Event</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Contacts Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#devotion" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-book"></i><span>Devotionals</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="devotion" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="./devotions">
+                        <i class="bi bi-circle"></i><span>View all</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./create-devotion">
+                        <i class="bi bi-circle"></i><span>Add Devetional</span>
                     </a>
                 </li>
             </ul>
@@ -82,12 +101,13 @@
         </a>
       </li><!-- End Profile Page Nav -->
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link collapsed" href="./register">
           <i class="bi bi-card-list"></i>
           <span>Register</span>
         </a>
-      </li><!-- End Register Page Nav -->
+      </li> -->
+      <!-- End Register Page Nav -->
 
     </ul>
 

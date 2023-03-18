@@ -40,16 +40,23 @@ require_once 'components/header.php';
                     <div class="col-xl-8">
                         <div class="blog-content-box">
 
+
+                        <?php
+                            if ($events) {
+                                foreach ($events as $event) {
+                                    extract($event); ?>
+
                             <!--Start Single Blog Style3-->
                             <div class="single-blog-style1 single-blog-style1--instyle3">
                                 <div class="single-blog-style1__inner">
                                     <div class="img-holder">
                                         <div class="inner">
-                                            <img src="assets/images/events/1.jpg" alt="">
+                                        <div style="width: 770px; height: 420px; background-image: url(assets/images/events/<?= $event_img; ?>); background-position: center; background-size: cover;">
+                                                    </div>
                                         </div>
                                         <div class="date-box">
-                                            <h6>2<br> <span>Sept</span></h6>
-                                        </div>
+                                                    <h6><?= date('d', strtotime($date)); ?><br> <span><?= date('M', strtotime($date)); ?></span></h6>
+                                                </div>
                                     </div>
                                     <div class="text-holder">
                                         <ul class="meta-info">
@@ -57,17 +64,27 @@ require_once 'components/header.php';
                                                 <i class="fa fa-user" aria-hidden="true"></i>
                                                 <a href="#">by Admin</a>
                                             </li>
+
+                                            <li>
+                                                <i class="fa fa-clock" aria-hidden="true"></i>
+                                                <a href="#">Time: <?= $event_time; ?></a>
+                                            </li>
+
+                                            <li>
+                                                <i class="fa fa-venue" aria-hidden="true"></i>
+                                                <a href="#">Venue: <?= $event_venue; ?></a>
+                                            </li>
                                         </ul>
                                         <div class="text-inner">
                                             <h3 class="blog-title">
-                                                <a href="blog-single.html">Anambra State Day</a>
+                                                <a href="event-details?event=<?= $event_slug; ?>"><?= $event_title; ?></a>
                                             </h3>
                                         </div>
                                         <div class="text">
-                                            <p>2nd September 2023 Anambra Day by ASU UK & I Please Save</p>
+                                            <p><?= $event_desc; ?></p>
                                         </div>
                                         <div class="btn-box">
-                                            <a class="btn-one" href="blog-single.html">
+                                            <a class="btn-one" href="event-details?event=<?= $event_slug; ?>">
                                                 <span class="txt">
                                                     Know more<i class="icon-refresh arrow"></i>
                                                 </span>
@@ -77,6 +94,7 @@ require_once 'components/header.php';
                                 </div>
                             </div>
                             <!--End Single Blog Style3-->
+                            <?php } } ?>
 
                             <!-- Pagination -->
                             <!-- <div class="row">
@@ -115,48 +133,33 @@ require_once 'components/header.php';
                                 </div>
                                 <div class="sidebar-blog-post">
                                     <ul class="blog-post">
+
+                                        <?php
+                                            $recent_posts = EXECUTE_QUERY(SELECT_ALL_LIMIT("posts", "post_id", 0, 3));
+                                            if ($recent_posts) {
+                                                foreach ($recent_posts as $recent) {
+                                                    extract($recent); ?>
                                         <li>
                                             <div class="inner">
                                                 <div class="img-box">
+                                                    <!-- 70 * 70 -->
+                                                    <div style="width: 70px; height: 70px; background-image: url(assets/images/news/<?= $post_img; ?>); background-position: center; background-size: cover;">
+                                                    </div>
                                                     <img src="assets/images/sidebar/news-1.jpg" alt="Awesome Image">
                                                     <div class="overlay-content">
-                                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                        <a href="news-details?news=<?= $post_slug; ?>"><i class="fa fa-link" aria-hidden="true"></i></a>
                                                     </div>
                                                 </div>
                                                 <div class="title-box">
                                                     <div class="admin"><span class="icon-user"></span> by Admin</div>
-                                                    <h4><a href="#">Integer tristique odio<br> vitae lorem gra</a></h4>
+                                                    <h4><a href="news-details?news=<?= $post_slug; ?>"><?= $post_title; ?></a></h4>
                                                 </div>
                                             </div>
                                         </li>
-                                        <li>
-                                            <div class="inner">
-                                                <div class="img-box">
-                                                    <img src="assets/images/sidebar/news-2.jpg" alt="Awesome Image">
-                                                    <div class="overlay-content">
-                                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title-box">
-                                                    <div class="admin"><span class="icon-user"></span> by Admin</div>
-                                                    <h4><a href="#">Integer tristique odio<br> vitae lorem gra</a></h4>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="inner">
-                                                <div class="img-box">
-                                                    <img src="assets/images/sidebar/news-3.jpg" alt="Awesome Image">
-                                                    <div class="overlay-content">
-                                                        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title-box">
-                                                    <div class="admin"><span class="icon-user"></span> by Admin</div>
-                                                    <h4><a href="#">Integer tristique odio<br> vitae lorem gra</a></h4>
-                                                </div>
-                                            </div>
-                                        </li>
+
+                                        <?php } } ?>
+
+
                                     </ul>
                                 </div>
                             </div>
@@ -166,9 +169,12 @@ require_once 'components/header.php';
                                     <h3>Categories</h3>
                                 </div>
                                 <ul class="sidebar-categories-box">
-                                    <li><a href="#">Politics</a></li>
-                                    <li><a href="#">Uk News</a></li>
-                                    <li><a href="#">Ireland News</a></li>
+                                    <?php 
+                                        if ($categories) {
+                                            foreach ($categories as $category) {
+                                                extract($category); ?>
+                                                <li><a href=""><?= $cat_name; ?></a></li>
+                                    <?php } } ?>
                                 </ul>
                             </div>
 

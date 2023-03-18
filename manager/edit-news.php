@@ -1,22 +1,32 @@
 
 <?php 
 require_once './partials/header.php'; 
+if (isset($_GET['news'])) {
+    $post_id = $_GET['news']; 
+    $posts = EXECUTE_QUERY(SELECT_WHERE("posts", "post_id", $post_id));
+
+    foreach ($posts as $post) {
+        extract($post);
+    }
+}
 
 if (isset($_POST['submit_btn'])) {
-  $title = ALLOW_SAFE_SYMBOLS(CHECK_INPUT(SANITIZE($_POST['title'])));
-  $slug = CHECK_INPUT(SANITIZE($_POST['slug']));
+  $title = ALLOW_SAFE_SYMBOLS(SANITIZE($_POST['title']));
+  $slug = SANITIZE($_POST['slug']);
   $cat = $_POST['cat'];
-  $desc = CHECK_INPUT(SANITIZE(ALLOW_SAFE_SYMBOLS($_POST['desc'])));
+  $desc = SANITIZE(ALLOW_SAFE_SYMBOLS($_POST['desc']));
   $file = $_FILES['image'];
   $image = $_FILES['image']['name'];
   $tmp_name = $_FILES['image']['tmp_name'];
   move_uploaded_file($tmp_name, "../assets/images/news/$image");
 
-  $sql = "INSERT INTO posts (post_title, post_slug, post_cat, post_img, post_desc) VALUES ('$title', '$slug', '$cat', '$image', '$desc')";
+  $sql = "UPDATE posts SET post_title = '$title', post_slug = '$slug', post_cat = '$cat', post_img = '$image', post_desc = '$desc' WHERE post_id = $post_id";
+
   $result = VALIDATE_QUERY($sql);
 
   if ($result) {
-    echo "<script>alert('News Created!');</script>";
+    echo "<script>alert('News Updated!');</script>";
+    REDIRECT('news');
   } else {
       echo "<script>alert('Something went wrong! Please try again')</script>";
   }
@@ -32,11 +42,11 @@ if (isset($_POST['submit_btn'])) {
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Create News</h1>
+      <h1>Update News</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Create News</li>
+          <li class="breadcrumb-item">Update News</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -50,11 +60,11 @@ if (isset($_POST['submit_btn'])) {
             <div class="card-body">
               <form action="" method="post" class="mt-3" enctype="multipart/form-data">
                 <div class="form-group">
-                    <input type="text" name="title" onkeyup="InsertSlug(this)" required class="form-control mb-2" id="title" placeholder="News title">
+                    <input type="text" name="title" onkeyup="InsertSlug(this)" value="<?= $post_title; ?>" required class="form-control mb-2" id="title" placeholder="News title">
                 </div>
 
                 <div class="form-group">
-                    <input type="text" readonly name="slug" required class="form-control mb-2" id="slug" placeholder="News slug">
+                    <input type="text" value="<?= $post_slug; ?>" readonly name="slug" required class="form-control mb-2" id="slug" placeholder="News slug">
                 </div>
 
                   <div class="form-group">
@@ -64,21 +74,22 @@ if (isset($_POST['submit_btn'])) {
                         if ($categories) {
                             foreach($categories as $category) {
                                 extract($category); ?>
-                                <option value="<?= $cat_name; ?>"><?= $cat_name; ?></option>
+                                <option <?php if ($cat_name == $post_cat) : echo "selected"; endif; ?> value="<?= $cat_name; ?>"><?= $cat_name; ?></option>
                         <?php } } ?>
                     </select>
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group mb-2">
                     <label for="image" class="mb-1">Choose Image</label>
-                      <input type="file" name="image" required class="form-control mb-2" id="image">
+                      <input type="file" name="image" required class="form-control" id="image">
+                      <span style="font-size: 13px;" class="text-muted">Current image: <?= $post_img; ?></span>
                   </div>
 
                   <div class="form-group">
-                      <textarea name="desc" id="desc" class="form-control"></textarea>
+                      <textarea name="desc" id="desc" class="form-control"><?= $post_desc; ?></textarea>
                   </div>
 
-                <button type="submit" name="submit_btn" class="mt-3 btn btn-primary shadow">Create News <i class="bi bi-person"></i></button>
+                <button type="submit" name="submit_btn" class="mt-3 btn btn-primary shadow">Update News <i class="bi bi-person"></i></button>
               </form>
             </div>
           </div>

@@ -1,3 +1,16 @@
+<?php require_once 'manager/prepared/prepared.php'; 
+
+    // For News - Index page
+    $news = EXECUTE_QUERY(SELECT_ALL("posts", "post_id"));
+
+    // For Events - Events page
+    $events = EXECUTE_QUERY(SELECT_ALL("events", "event_id"));
+
+    // For all categories
+    $categories = EXECUTE_QUERY(SELECT_ALL("categories", "cat_id"));
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -237,7 +250,7 @@
 
                                         <li class="<?php if ($headerTitle == "gallery") : echo "current"; endif; ?>"><a href="gallery"><span>Gallery</span></a></li>
 
-                                        <li class="<?php if ($headerTitle == "contact") : echo "current"; endif; ?>"><a href="contact.html"><span>Contact</span></a></li>
+                                        <li class="<?php if ($headerTitle == "contact") : echo "current"; endif; ?>"><a href="contact"><span>Contact</span></a></li>
                                     </ul>
                                 </div>
                             </nav>

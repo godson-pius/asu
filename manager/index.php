@@ -42,9 +42,6 @@
                   <h5 class="card-title">Messages</h5>
 
                   <div class="d-flex align-items-center">
-                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                      <i class="bi bi-chat-square-text"></i>
-                    </div>
                     <div class="ps-3">
                       <h6><?= GET_TOTAL('messages'); ?></h6>
                     </div>
@@ -71,7 +68,7 @@
 
                   <div class="d-flex align-items-center">
                     <div class="ps-3">
-                      <h6><?= number_format($current_price); ?></h6>
+                      <h6><?= GET_TOTAL('posts'); ?></h6>
                       <!-- <span class="text-muted small pt-2 ps-1">Nadice Oil &amp; Gas</span> -->
                     </div>
                   </div>
@@ -92,7 +89,7 @@
               <h5 class="card-title">Events</h5>
 
               <div class="activity">
-                <h4>4</h4>
+                <h3><?= GET_TOTAL('events'); ?></h3>
               </div>
 
             </div>
@@ -125,16 +122,18 @@
                     <tbody>
 
                     <?php 
-                      if ($requests) {
-                        foreach ($requests as $request) {
-                          extract($request); ?>
+                      if ($news) {
+                        foreach ($news as $new) {
+                          extract($new); ?>
 
                       <tr>
-                        <th scope="row"><a href="#">#<?= $request_id; ?></a></th>
-                        <td><?= $company; ?></td>
-                        <td><a href="#" class="text-primary"><?= $phone; ?></a></td>
-                        <td><?= $liter; ?></td>
-                        <td><span class="badge bg-success"><?= $current_price; ?></span></td>
+                        <th scope="row"><a href="#">#<?= $post_id; ?></a></th>
+                        <td><?= $post_title; ?></td>
+                        <td><?= $post_cat; ?></td>
+                        <td>
+                          <img src="../assets/images/news/<?= $post_img; ?>" alt="Post Image" width="50">
+                        </td>
+                        <td><?= HUMAN_DATE($created_at); ?></td>
                       </tr>
 
                       <?php } } ?>
@@ -163,22 +162,24 @@
                       <tr>
                         <th scope="col">#</th>
                         <th scope="col">Title</th>
-                        <th scope="col">Image</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Venue</th>
                         <th scope="col">Date Posted</th>
                       </tr>
                     </thead>
                     <tbody>
 
                     <?php 
-                      if ($requests) {
-                        foreach ($requests as $request) {
-                          extract($request); ?>
+                      if ($events) {
+                        foreach ($events as $event) {
+                          extract($event); ?>
 
                       <tr>
-                        <th scope="row"><a href="#">#<?= $request_id; ?></a></th>
-                        <td><a href="#" class="text-primary"><?= $phone; ?></a></td>
-                        <td><?= $liter; ?></td>
-                        <td><span class="badge bg-success"><?= $current_price; ?></span></td>
+                        <th scope="row"><a href="#">#<?= $event_id; ?></a></th>
+                        <td><a href="" class="text-primary"><?= $event_title; ?></a></td>
+                        <td><?= $event_date; ?></td>
+                        <td><?= $event_venue; ?></td>
+                        <td><?= HUMAN_DATE($created_at); ?></td>
                       </tr>
 
                       <?php } } ?>

@@ -269,41 +269,49 @@ require_once 'components/header.php';
                     <div class="theme_carousel blog-style1-carousel owl-dot-style1 owl-theme owl-carousel rtl-carousel"
                          data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": false, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "1" } , "992":{ "items" : "1" }, "1200":{ "items" : "2" }}}'>
 
-                        <!--Start Single Blog Style1-->
-                        <div class="single-blog-style1">
-                            <div class="single-blog-style1__inner">
-                                <div class="img-holder">
-                                    <div class="inner">
-                                        <!-- 270 * 340 -->
-                                        <img src="assets/images/news/2.jpg" alt=""/>
+                         <?php
+                            if ($news) {
+                                foreach ($news as $new) {
+                                    extract($new); 
+                                    $comment_count = GET_TOTAL_WHERE("comments", "post_id", $post_id);
+                                    ?>
+                                    <!--Start Single Blog Style1-->
+                                    <div class="single-blog-style1">
+                                        <div class="single-blog-style1__inner">
+                                            <div class="img-holder">
+                                                <div class="inner">
+                                                    <!-- 270 * 340 -->
+                                                    <div style="width: 270px; height: 340px; background-image: url(assets/images/news/<?= $post_img; ?>); background-position: center; background-size: cover;">
+                                                    </div>
+                                                </div>
+                                                <div class="date-box">
+                                                    <h6><?= date('d', strtotime($created_at)); ?><br> <span><?= date('M', strtotime($created_at)); ?></span></h6>
+                                                </div>
+                                            </div>
+                                            <div class="text-holder">
+                                                <ul class="meta-info">
+                                                    <li>
+                                                        <i class="fa fa-user" aria-hidden="true"></i> <a href="#">by
+                                                            Admin</a>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-comment-o" aria-hidden="true"></i> <a href="#"><?= $comment_count; ?>
+                                                            Comment(s)</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="text-inner">
+                                                    <h3 class="blog-title">
+                                                        <a href="news-details?news=<?= $post_slug; ?>"><?= substr($post_title, 0, 20); ?>...</a>
+                                                    </h3>
+                                                </div>
+                                                <div class="text">
+                                                    <p><?= substr($post_desc, 0, 130); ?>...</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="date-box">
-                                        <h6>24<br> <span>Jan</span></h6>
-                                    </div>
-                                </div>
-                                <div class="text-holder">
-                                    <ul class="meta-info">
-                                        <li>
-                                            <i class="fa fa-user" aria-hidden="true"></i> <a href="#">by
-                                                Admin</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-comment-o" aria-hidden="true"></i> <a href="#">0
-                                                Comments</a>
-                                        </li>
-                                    </ul>
-                                    <div class="text-inner">
-                                        <h3 class="blog-title">
-                                            <a href="news-details?news=governor-visits">Governor Soludo reveives Ned Okonkwo, E-Money, KCEE and Cubana</a>
-                                        </h3>
-                                    </div>
-                                    <div class="text">
-                                        <p>The Anambra State Governor, Prof Charles Chukwuma Soludo...</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End Single Blog Style1-->
+                                    <!--End Single Blog Style1-->
+                        <?php } } ?>
                         
                     </div>
                 </div>

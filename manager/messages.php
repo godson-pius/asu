@@ -8,11 +8,11 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>All Request</h1>
+      <h1>All Messages</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">All Requests</li>
+          <li class="breadcrumb-item">All Messages</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -22,23 +22,24 @@
         <hr>
 
         <?php
-          if ($resolved_requests) {
+          if ($messages) {
             echo '<button id="deleteAll" class="btn btn-danger shadow btn-sm mb-3" style="float: right;">Delete All <i class="bi bi-trash"></i></button>';
-            foreach ($resolved_requests as $resolved) {
-              extract($resolved); ?>
+            foreach ($messages as $message) {
+              extract($message); ?>
 
               <div class="col-lg-6">
                 <div class="card">
                   <div class="card-body">
-                  <h5 class="card-title"><?= $company; ?> | <span><?= $phone; ?></span> - <button class="btn btn-primary btn-sm shadow rounded"><?= $liter; ?> Liters</button></h5>
-                  <p><?= $address; ?></p>
+                  <h5 class="card-title"><?= $subject; ?> - <span class="text-warning"><?= HUMAN_DATE($created_at); ?></span></h5>
+                  <p><?= $message; ?></p>
+                  <p>- <span style="font-size: 13px;" class="text-muted"><?= $fullname; ?></span></p>
 
                   <hr>
-                    <button id="delete" data-id="<?= $request_id; ?>" class="btn btn-danger shadow btn-sm" style="float: right;">Delete <i class="bi bi-trash"></i></button>
+                    <button id="deleteMessage" data-id="<?= $message_id; ?>" class="btn btn-danger shadow btn-sm" style="float: right; margin-left: 5px;">Delete <i class="bi bi-trash"></i></button>
                   </div>
                 </div>
               </div>
-        <?php } } else { echo "No resolved requests!"; } ?>
+        <?php } } else { echo "No news yet!"; } ?>
 
       </div>
     </section>
@@ -68,7 +69,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <!-- Nadice Js -->
-    <script src="./assets/js/nadice.js"></script>
+    <script src="./assets/js/asu.js"></script>
 
 </body>
 

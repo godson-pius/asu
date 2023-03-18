@@ -2,36 +2,27 @@
 require_once 'prepared/prepared.php';
 ACCESS_USING_SESSION('administrator', 'login');
 
-// For Price - Header
-$res = EXECUTE_QUERY(SELECT_WHERE("price", "price_id", 1));
-foreach ($res as $price) {
-  $current_price = $price['current'];
-  $last_updated = $price['updated_at'];
-}
-
 // For Recent Requests - Sidebar
-$request_sidebars = EXECUTE_QUERY(SELECT_ALL_LIMIT("requests", "request_id", 0, 7));
+//$request_sidebars = EXECUTE_QUERY(SELECT_ALL_LIMIT("requests", "request_id", 0, 7));
 
-// For Recent Requests - Index page
-$requests = EXECUTE_QUERY(SELECT_ALL("requests", "request_id"));
+// For News - News page
+$news = EXECUTE_QUERY(SELECT_ALL("posts", "post_id"));
 
-// For all teams - Teams page
-$teams = EXECUTE_QUERY(SELECT_ALL("teams", "team_id"));
+// For News - News page
+$events = EXECUTE_QUERY(SELECT_ALL("events", "event_id"));
 
-// For all partners - Index page
-$partners = EXECUTE_QUERY(SELECT_ALL("partners", "partner_id"));
-
-// fOR Pending Requests - Pending-requests page
-$pending_requests = EXECUTE_QUERY(SELECT_WHERE_ORDER("requests", "status", "0", "request_id", "DESC"));
-
-// fOR All Requests that have been resolved - Requets page
-$resolved_requests = EXECUTE_QUERY(SELECT_WHERE_ORDER("requests", "status", "1", "request_id", "DESC"));
-
-// For All Messages - Contact page
+// For messages - Message page
 $messages = EXECUTE_QUERY(SELECT_ALL("messages", "message_id"));
 
-// For All Messages - Contact page
-$clients = EXECUTE_QUERY(SELECT_ALL("clients", "client_id"));
+// For all categories
+$categories = EXECUTE_QUERY(SELECT_ALL("categories", "cat_id"));
+
+// For all partners - Index page
+//$partners = EXECUTE_QUERY(SELECT_ALL("partners", "partner_id"));
+
+// fOR Pending Requests - Pending-requests page
+//$pending_requests = EXECUTE_QUERY(SELECT_WHERE_ORDER("requests", "status", "0", "request_id", "DESC"));
+
 
 // For getting admin details - Header & Profile
 $admins = EXECUTE_QUERY(SELECT_WHERE("admins", "admin_id", $_SESSION['administrator']));
@@ -99,12 +90,12 @@ foreach ($admins as $admin) {
 
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
             <i class="bi bi-bell"></i>
-            <span class="badge bg-primary badge-number"><?= GET_TOTAL_WHERE("requests", "status", "0"); ?></span>
+            <span class="badge bg-primary badge-number"><?= GET_TOTAL("messages"); ?></span>
           </a><!-- End Notification Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
             <li class="dropdown-header">
-              You have <?= GET_TOTAL_WHERE("requests", "status", "0"); ?> new requests
+              You have <?= GET_TOTAL("messages"); ?> messages
               <a href="./pending-requests"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
             </li>
 
@@ -116,12 +107,12 @@ foreach ($admins as $admin) {
 
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
             <i class="bi bi-chat-left-text"></i>
-            <span class="badge bg-success badge-number"><?= GET_TOTAL('messages'); ?></span>
+            <span class="badge bg-success badge-number"><?= GET_TOTAL('posts'); ?></span>
           </a><!-- End Messages Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
             <li class="dropdown-header">
-              You have <?= GET_TOTAL('messages'); ?> new messages
+              You have <?= GET_TOTAL('posts'); ?> news in system
               <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
             </li>
 

@@ -5,18 +5,18 @@ require_once './partials/header.php';
 if (isset($_POST['submit_btn'])) {
   $title = ALLOW_SAFE_SYMBOLS(CHECK_INPUT(SANITIZE($_POST['title'])));
   $slug = CHECK_INPUT(SANITIZE($_POST['slug']));
-  $cat = $_POST['cat'];
+  $bible = CHECK_INPUT(SANITIZE($_POST['bible']));
   $desc = CHECK_INPUT(SANITIZE(ALLOW_SAFE_SYMBOLS($_POST['desc'])));
-  $file = $_FILES['image'];
-  $image = $_FILES['image']['name'];
-  $tmp_name = $_FILES['image']['tmp_name'];
-  move_uploaded_file($tmp_name, "../assets/images/news/$image");
+//   $file = $_FILES['image'];
+//   $image = $_FILES['image']['name'];
+//   $tmp_name = $_FILES['image']['tmp_name'];
+//   move_uploaded_file($tmp_name, "../assets/images/news/$image");
 
-  $sql = "INSERT INTO posts (post_title, post_slug, post_cat, post_img, post_desc) VALUES ('$title', '$slug', '$cat', '$image', '$desc')";
+  $sql = "INSERT INTO devotions (devotion_title, devotion_slug, devotion_bible, devotion_body) VALUES ('$title', '$slug', '$bible', '$desc')";
   $result = VALIDATE_QUERY($sql);
 
   if ($result) {
-    echo "<script>alert('News Created!');</script>";
+    echo "<script>alert('Devotion Created!');</script>";
   } else {
       echo "<script>alert('Something went wrong! Please try again')</script>";
   }
@@ -32,11 +32,11 @@ if (isset($_POST['submit_btn'])) {
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Create News</h1>
+      <h1>Create Devotion</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Create News</li>
+          <li class="breadcrumb-item">Create Devotion</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -50,35 +50,27 @@ if (isset($_POST['submit_btn'])) {
             <div class="card-body">
               <form action="" method="post" class="mt-3" enctype="multipart/form-data">
                 <div class="form-group">
-                    <input type="text" name="title" onkeyup="InsertSlug(this)" required class="form-control mb-2" id="title" placeholder="News title">
+                    <input type="text" name="title" onkeyup="InsertSlug(this)" required class="form-control mb-2" id="title" placeholder="Devotion title">
                 </div>
 
                 <div class="form-group">
-                    <input type="text" readonly name="slug" required class="form-control mb-2" id="slug" placeholder="News slug">
+                    <input type="text" readonly name="slug" required class="form-control mb-2" id="slug" placeholder="Devotion slug">
                 </div>
 
-                  <div class="form-group">
-                    <select name="cat" id="cat" class="form-control mb-2">
-                        <option value="" disabled selected>Select Category</option>
-                        <?php
-                        if ($categories) {
-                            foreach($categories as $category) {
-                                extract($category); ?>
-                                <option value="<?= $cat_name; ?>"><?= $cat_name; ?></option>
-                        <?php } } ?>
-                    </select>
-                  </div>
-
+                <div class="form-group">
+                    <input type="text" name="bible" required class="form-control mb-2" id="bible" multiple placeholder="Devotion scriptures">
+                </div>
+<!-- 
                   <div class="form-group">
                     <label for="image" class="mb-1">Choose Image</label>
                       <input type="file" name="image" required class="form-control mb-2" id="image">
-                  </div>
+                  </div> -->
 
                   <div class="form-group">
                       <textarea name="desc" id="desc" class="form-control"></textarea>
                   </div>
 
-                <button type="submit" name="submit_btn" class="mt-3 btn btn-primary shadow">Create News <i class="bi bi-person"></i></button>
+                <button type="submit" name="submit_btn" class="mt-3 btn btn-primary shadow">Create Devotion <i class="bi bi-book"></i></button>
               </form>
             </div>
           </div>

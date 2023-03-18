@@ -40,14 +40,14 @@ if (document.querySelectorAll('#delete')) {
         el.onclick = () => {
             const id = el.dataset.id
 
-            const conf = confirm('Are you sure you want to delete this request?');
+            const conf = confirm('Are you sure you want to delete this news?');
             if (conf) {
                 fetch(`api/app.php?delete=${id}`).then(e => e).then(e => e.text()).then(e => {
                     if (e === "true") {
-                        showNotification('Request deleted')
+                        showNotification('News deleted')
                         el.parentElement.parentElement.parentElement.remove()
                     } else {
-                        alert("Failed to delete request")
+                        alert("Failed to delete news! Please try again")
                     }
                 })
             }
@@ -59,18 +59,56 @@ if (document.querySelectorAll('#delete')) {
 if (document.querySelector('#deleteAll')) {
     document.querySelector('#deleteAll').onclick = () => {
 
-        const conf = confirm('Are you sure you want to delete all request?');
+        const conf = confirm('Are you sure you want to delete all news?');
         if (conf) {
             fetch(`api/app.php?deleteall=true`).then(e => e).then(e => e.text()).then(e => {
                 if (e === "true") {
-                    showNotification('Requests have been deleted')
+                    showNotification('News cleared')
                     window.location.reload()
                 } else {
-                    alert("Failed to delete all requests")
+                    alert("Failed to delete all news! Try again")
                 }
             })
         }
     }
+}
+
+// fOR events =============================================================================
+if (document.querySelector('#deleteAllEvent')) {
+    document.querySelector('#deleteAllEvent').onclick = () => {
+
+        const conf = confirm('Are you sure you want to delete all events?');
+        if (conf) {
+            fetch(`api/app.php?deleteallevent=true`).then(e => e).then(e => e.text()).then(e => {
+                if (e === "true") {
+                    showNotification('Events cleared')
+                    window.location.reload()
+                } else {
+                    alert("Failed to delete all events! Try again")
+                }
+            })
+        }
+    }
+}
+
+if (document.querySelectorAll('#deleteEvent')) {
+    document.querySelectorAll('#deleteEvent').forEach((el) => {
+        el.onclick = () => {
+            const id = el.dataset.id
+
+            const conf = confirm('Are you sure you want to delete this event?');
+            if (conf) {
+                fetch(`api/app.php?deleteevent=${id}`).then(e => e).then(e => e.text()).then(e => {
+                    if (e === "true") {
+                        showNotification('Event deleted')
+                        el.parentElement.parentElement.parentElement.remove()
+                    } else {
+                        alert("Failed to delete event! Please try again")
+                    }
+                })
+            }
+        }
+    })
 }
 
 // fOR Messsages =================================================================

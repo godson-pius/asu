@@ -37,17 +37,26 @@ require_once 'components/header.php';
 
                 <div class="row">
 
+
+                <?php
+                            if ($news) {
+                                foreach ($news as $new) {
+                                    extract($new); 
+                                    $comment_count = GET_TOTAL_WHERE("comments", "post_id", $post_id);
+                                    ?>
                     <!--Start Single Blog Style2-->
                     <div class="col-xl-4">
                         <div class="single-blog-style1 single-blog-style1--instyle2">
                             <div class="single-blog-style1__inner">
                                 <div class="img-holder">
                                     <div class="inner">
-                                        <img src="assets/images/events/2.jpg" alt="">
+                                    <div style="width: 270px; height: 340px; background-image: url(assets/images/news/<?= $post_img; ?>); background-position: center; background-size: cover;">
+                                                    </div>
+                                        
                                     </div>
                                     <div class="date-box">
-                                        <h6>16<br> <span>Nov</span></h6>
-                                    </div>
+                                                    <h6><?= date('d', strtotime($created_at)); ?><br> <span><?= date('M', strtotime($created_at)); ?></span></h6>
+                                                </div>
                                 </div>
                                 <div class="text-holder">
                                     <ul class="meta-info">
@@ -56,27 +65,28 @@ require_once 'components/header.php';
                                                 Admin</a>
                                         </li>
                                         <li>
-                                            <i class="fa fa-comment-o" aria-hidden="true"></i> <a href="#">0
+                                            <i class="fa fa-comment-o" aria-hidden="true"></i> <a href="#"><?= $comment_count; ?>
                                                 Comments</a>
                                         </li>
                                     </ul>
                                     <div class="text-inner">
-                                        <h3 class="blog-title">
-                                            <a href="news-details?news=governors-visit">Governor Soludo reveives Ned Okonkwo, E-Money, KCEE and Cubana</a>
-                                        </h3>
-                                    </div>
-                                    <div class="text">
-                                        <p>The Anambra State Governor, Prof Charles Chukwuma Soludo, received in audience at the Anambra State...</p>
-                                    </div>
+                                                    <h3 class="blog-title">
+                                                        <a href="news-details?news=<?= $post_slug; ?>"><?= substr($post_title, 0, 20); ?>...</a>
+                                                    </h3>
+                                                </div>
+                                                <div class="text">
+                                                    <p><?= substr($post_desc, 0, 130); ?>...</p>
+                                                </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--End Single Blog Style2-->
+                    <?php } } ?>
 
                 </div>
 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-xl-12">
                         <ul class="styled-pagination text-center clearfix">
                             <li class="arrow prev"><a href="#"><span class="icon-left-arrow"></span></a></li>
@@ -86,7 +96,7 @@ require_once 'components/header.php';
                             <li class="arrow next"><a href="#"><span class="icon-right-arrow"></span></a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </section>

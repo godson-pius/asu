@@ -29,7 +29,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Nadice Oil &amp; Gas Limited - Admin Login</title>
+  <title>Anambra State Union Uk &amp; Ireland - Admin Login</title>
 
   <!-- Favicons -->
   <link href="../images/logo.png" rel="icon">
@@ -66,7 +66,7 @@
             <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                   <img src="../images/logo.png" alt="">
-                  <span class="d-none d-lg-block">Nadice Oil &amp; Gas Limited</span>
+                  <span class="d-none d-lg-block">Anambra State Union Uk &amp; Ireland</span>
                 </a>
               </div><!-- End Logo -->
 

@@ -10,7 +10,7 @@
                     </li>
                     <li><a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-email"></i> <span class="nav-text">Mail</span><span class="badge badge-success nav-badge">16</span></a>
                         <ul aria-expanded="false">
-                            <li><a href="email-inbox.html">Inbox</a>
+                            <li><a href="mail">Inbox</a>
                             </li>
                             <li><a href="email-compose.html">Compose</a>
                             </li>

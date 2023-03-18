@@ -18,7 +18,7 @@ if (isset($_GET['pending'])) {
 if (isset($_GET['delete'])) {
     $id = $_GET['delete'];
 
-    $sql = "DELETE FROM requests WHERE request_id = $id";
+    $sql = "DELETE FROM posts WHERE post_id = $id";
 
     $result = VALIDATE_QUERY($sql);
     if ($result === true) {
@@ -31,7 +31,34 @@ if (isset($_GET['delete'])) {
 if (isset($_GET['deleteall'])) {
     $status = $_GET['deleteall'];
 
-    $sql = "DELETE FROM requests WHERE status = 1";
+    $sql = "DELETE FROM posts";
+
+    $result = VALIDATE_QUERY($sql);
+    if ($result === true) {
+        echo "true";
+    } else {
+        echo false;
+    }
+}
+
+// Events =================================================
+if (isset($_GET['deleteallevent'])) {
+    $status = $_GET['deleteallevent'];
+
+    $sql = "DELETE FROM events";
+
+    $result = VALIDATE_QUERY($sql);
+    if ($result === true) {
+        echo "true";
+    } else {
+        echo false;
+    }
+}
+
+if (isset($_GET['deleteevent'])) {
+    $id = $_GET['deleteevent'];
+
+    $sql = "DELETE FROM events WHERE event_id = $id";
 
     $result = VALIDATE_QUERY($sql);
     if ($result === true) {

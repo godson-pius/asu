@@ -1,11 +1,11 @@
 <?php
-$headerTitle = "news";
+$headerTitle = "event";
 require_once 'components/header.php';
 
-if (isset($_GET['news'])) {
-    $post_slug = $_GET['news'];
-    $posts = EXECUTE_SINGLE_ROW_QUERY(SELECT_WHERE("posts", "post_slug", $post_slug));
-    extract($posts);
+if (isset($_GET['event'])) {
+    $event_slug = $_GET['event'];
+    $events = EXECUTE_SINGLE_ROW_QUERY(SELECT_WHERE("events", "event_slug", $event_slug));
+    extract($events);
 }
 
 ?>
@@ -22,12 +22,12 @@ if (isset($_GET['news'])) {
                                 data-aos-duration="1500">
                                 <ul>
                                     <li><a href="index.php">Home</a></li>
-                                    <li class="active">News Details</li>
+                                    <li class="active">Event Details</li>
                                 </ul>
                             </div>
 
                             <div class="title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                                <h2>News Details</h2>
+                                <h2>Event Details</h2>
                             </div>
 
                         </div>
@@ -52,11 +52,11 @@ if (isset($_GET['news'])) {
                                     <div class="img-holder">
                                         <div class="inner">
                                             <!-- 770 * 420 -->
-                                            <div style="width: 770px; height: 420px; background-image: url(assets/images/news/<?= $post_img; ?>); background-position: center; background-size: cover;">
+                                            <div style="width: 770px; height: 420px; background-image: url(assets/images/events/<?= $event_img; ?>); background-position: center; background-size: cover;">
                                                     </div>
                                         </div>
                                         <div class="date-box">
-                                                    <h6><?= date('d', strtotime($created_at)); ?><br> <span><?= date('M', strtotime($created_at)); ?></span></h6>
+                                                    <h6><?= date('d', strtotime($event_date)); ?><br> <span><?= date('M', strtotime($event_date)); ?></span></h6>
                                                 </div>
                                     </div>
                                     <div class="text-holder">
@@ -66,29 +66,23 @@ if (isset($_GET['news'])) {
                                                 <a href="#">by Admin</a>
                                             </li>
                                             <li>
-                                                <i class="fa fa-comment-o" aria-hidden="true"></i>
-                                                <a href="#"><?= $comment_count; ?> Comments</a>
+                                                <i class="fa fa-clock" aria-hidden="true"></i>
+                                                <a href="#">Time: <?= $event_time; ?></a>
+                                            </li>
+
+                                            <li>
+                                                <i class="fa fa-venue" aria-hidden="true"></i>
+                                                <a href="#">Venue: <?= $event_venue; ?></a>
                                             </li>
                                         </ul>
                                         <div class="text-inner">
-                                            <h3 class="blog-title"><?= $post_title; ?></h3>
+                                            <h3 class="blog-title"><?= $event_title; ?></h3>
                                         </div>
                                         <div class="text">
-                                            <p><?= $post_desc; ?></p>
+                                            <p><?= $event_desc; ?></p>
                                         </div>
 
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="tag-social-share-box">
-                                <div class="tag-box">
-                                    <div class="title">
-                                        <h3>Tags:</h3>
-                                    </div>
-                                    <ul class="tag-list">
-                                        <li><a href=""><?= $post_cat; ?></a></li>
-                                    </ul>
                                 </div>
                             </div>
 

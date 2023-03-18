@@ -103,8 +103,7 @@
               <div class="tab-content pt-2">
 
                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
-                  <h5 class="card-title">About</h5>
-                  <p class="small fst-italic"><?= $fullname; ?> is one of the managers in Nadice oil &amp; Gas Limited Website. <br> Cutting costs for our clients by ending the “epidemic mentality” of high-priced supplies of petroleum products and procurement of energy and electrical equipment.</p>
+                 
 
                   <h5 class="card-title">Profile Details</h5>
 
@@ -113,10 +112,7 @@
                     <div class="col-lg-9 col-md-8"><?= $fullname; ?></div>
                   </div>
 
-                  <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Company</div>
-                    <div class="col-lg-9 col-md-8">Nadice Oil &amp; Gas Limited</div>
-                  </div>
+              
 
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label">Phone</div>
