@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="aassets/images/resources/logo.png">
     <link rel="icon" type="image/png" href="assets/images/resources/logo.png" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/images/resources/logo.png" sizes="16x16">
 
