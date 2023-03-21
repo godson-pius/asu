@@ -175,7 +175,7 @@
 
                     <div class="header-top__right">
                         <div class="header-button-style1">
-                            <a class="btn-one" target="_blank" href="https://forms.gle/V7r1kJEX3T9DKf1y6">
+                            <a class="btn-one" href="member/register">
                                     <span class="txt">
                                         New member? Register<i class="icon-refresh arrow"></i>
                                     </span>
