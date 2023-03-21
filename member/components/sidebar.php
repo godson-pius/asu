@@ -16,12 +16,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="calender-event.html"><i class="mdi mdi-calendar-check"></i> <span class="nav-text">Events</span></a></li>
+                    <li><a href="events"><i class="mdi mdi-calendar-check"></i> <span class="nav-text">Events</span></a></li>
 
-                    <li><a href="widget-basic-card.html"><i class="mdi mdi-widgets"></i> <span class="nav-text">News</span></a>
+                    <li><a href="news"><i class="mdi mdi-widgets"></i> <span class="nav-text">News</span></a>
                     </li>
                     
-                    <li><a href="widget-basic-card.html"><i class="mdi mdi-nfc-variant"></i> <span class="nav-text">Devotionals</span></a>
+                    <li><a href="devotions"><i class="mdi mdi-nfc-variant"></i> <span class="nav-text">Devotionals</span></a>
                     </li>
                   
                     <li class="nav-label">Extra</li>

@@ -1,0 +1,81 @@
+        <?php require_once 'components/header.php';
+            if (isset($_GET['devotion'])) {
+                $topic = $_GET['devotion'];
+
+                $devotion = EXECUTE_SINGLE_ROW_QUERY(SELECT_WHERE("devotions", "devotion_slug", "$topic"));
+                extract($devotion);
+
+                // Set session for global access
+                SET_SESSION('devotionId', $devotion_id);
+            }
+
+            $sql = "SELECT * FROM likes WHERE type = 'd' AND member_id = 1 AND liked_id = $devotion_id";
+            $execute = EXECUTE_SINGLE_ROW_QUERY($sql);
+
+            if ($execute) {
+                $btn_style = 'btn btn-primary btn-sm';
+                $btn_text = 'Liked';
+            } else {
+                $btn_style = 'btn btn-danger btn-sm';
+                $btn_text = 'Like';
+            }
+        ?>
+        <!-- #/ header -->
+        <!-- sidebar -->
+       
+
+        <?php require_once 'components/sidebar.php';?>
+
+
+        <!-- #/ sidebar -->
+        <!-- content body -->
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="row page-titles">
+                    <div class="col p-0">
+                        <h4>Hello, <span>study to show thyself approved</span></h4>
+                    </div>
+                    <div class="col p-0">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active">Details</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title"><?= $devotion_title; ?></h4>
+                                <h6>- <?= $devotion_bible; ?></h6>
+                                <hr>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quod repudiandae quidem sunt ab animi eligendi harum, cupiditate sapiente voluptatum impedit officia aperiam possimus doloribus id ex consectetur, cumque soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime error non cupiditate nam, esse vero illo cum, aspernatur laudantium odio doloribus sint nesciunt dolorum voluptas in, corporis iste dolorem necessitatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure reprehenderit magnam aliquam, non similique earum voluptatem veniam cumque tempore temporibus esse rem quaerat, quae eius qui nemo neque dolor maxime!</p>
+
+                                <!-- Like count -->
+                                <button data-liked="<?= $devotion_id; ?>" data-type="d" data-member="<?= $_SESSION['member']; ?>" onclick="likePost(this)" class="<?= $btn_style; ?>"><?= $btn_text; ?></button> - <span id="total" class="text-primary"><?= GET_TOTAL_WHERE("likes", "liked_id", $devotion_id); ?> likes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!-- #/ content body -->
+        <!-- footer -->
+        <?php require_once 'components/footer.php'; ?>
+        <!-- #/ footer -->
+    </div>
+    <!-- Common JS -->
+    <script src="./assets/plugins/common/common.min.js"></script>
+    <!-- Custom script -->
+    <script src="./js/custom.min.js"></script>
+    <script src="./assets/plugins/tables/js/jquery.dataTables.min.js"></script>
+    <script src="./assets/plugins/tables/js/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="./assets/plugins/tables/js/datatable-init/datatable-basic.min.js"></script>
+    <script src="./js/asu.js"></script>
+</body>
+
+</html>

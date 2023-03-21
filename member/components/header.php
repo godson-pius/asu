@@ -1,3 +1,19 @@
+<?php
+    require_once '../manager/prepared/prepared.php';
+    
+    $latest_devotion = EXECUTE_SINGLE_ROW_QUERY(SELECT_ALL_LIMIT("devotions", "devotion_id", 0, 1));
+    $events = EXECUTE_QUERY(SELECT_ALL("events", "event_id"));
+    $news = EXECUTE_QUERY(SELECT_ALL("posts", "post_id"));
+    $devotions = EXECUTE_QUERY(SELECT_ALL("devotions", "devotion_id"));
+
+
+
+    // Member Detail
+    $member_details = EXECUTE_SINGLE_ROW_QUERY(SELECT_WHERE("members", "member_id", $_SESSION['member']));
+    extract($member_details);
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +23,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Member Dashboard</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/resources/logo.png">
 
     <link href="../../assets/plugins/tables/css/datatable/dataTables.bootstrap4.min.css" rel="stylesheet">
     
@@ -25,7 +41,7 @@
         <!-- header -->
         <div class="header">
             <div class="nav-header">
-                <div class="brand-logo"><a href="index.html"><b><img src="./assets/images/logo.png" alt=""> </b><span class="brand-title"><img src="./assets/images/logo-text.png" alt=""></span></a>
+                <div class="brand-logo"><a href="index.html"><b><img src="./assets/images/resources/logo.png" alt=""> </b><span class="brand-title"><img src="./assets/images/resources/logo.png" alt=""></span></a>
                 </div>
                 <div class="nav-control">
                     <div class="hamburger"><span class="line"></span> <span class="line"></span> <span class="line"></span>
@@ -150,61 +166,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="icons">
-                            <a href="javascript:void(0)"> <i class="mdi mdi-crosshairs-gps f-s-18" aria-hidden="true"></i>
-                                <div class="pulse-css"></div>
-                            </a>
-                            <div class="drop-down dropdown-task animated bounceInDown">
-                                <div class="dropdown-content-heading"><span class="text-left">Task Update</span>
-                                </div>
-                                <div class="dropdown-content-body">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <div class="notification-content"><small class="notification-timestamp pull-right">85% Complete</small>
-                                                    <div class="notification-heading">Task One</div>
-                                                    <div class="progress">
-                                                        <div style="width: 85%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" role="progressbar" class="progress-bar progress-bar-success"></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="notification-content"><small class="notification-timestamp pull-right">60% Complete</small>
-                                                    <div class="notification-heading">Task Two</div>
-                                                    <div class="progress">
-                                                        <div style="width: 60%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar progress-bar-primary"></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="notification-content"><small class="notification-timestamp pull-right">25% Complete</small>
-                                                    <div class="notification-heading">Task Three</div>
-                                                    <div class="progress">
-                                                        <div style="width: 25%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar" class="progress-bar progress-bar-warning"></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <div class="notification-content"><small class="notification-timestamp pull-right">75% Complete</small>
-                                                    <div class="notification-heading">Task Four</div>
-                                                    <div class="progress">
-                                                        <div style="width: 75%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" role="progressbar" class="progress-bar progress-bar-danger"></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="text-center"><a href="#" class="more-link">See All</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
+                        
                         <li class="icons"><a href="javascript:void(0)"><i class="mdi mdi-account f-s-20" aria-hidden="true"></i></a>
                             <div class="drop-down dropdown-profile animated bounceInDown">
                                 <div class="dropdown-content-body">
@@ -213,9 +175,7 @@
                                         </li>
                                         <li><a href="#"><i class="mdi mdi-settings"></i> <span>Setting</span></a>
                                         </li>
-                                        <li><a href="#"><i class="icon-lock"></i> <span>Lock Screen</span></a>
-                                        </li>
-                                        <li><a href="#"><i class="icon-power"></i> <span>Logout</span></a>
+                                        <li><a href="logout"><i class="icon-power"></i> <span>Logout</span></a>
                                         </li>
                                     </ul>
                                 </div>

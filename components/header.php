@@ -292,7 +292,7 @@
                     <!--Logo-->
                     <div class="logo float-left">
                         <a href="index.html" class="img-responsive">
-                            <img src="assets/images/resources/logo.png" alt="Sticky ASU Logo" title="" width="130">
+                            <img src="assets/images/resources/logo.png" alt="Sticky ASU Logo" title="" width="100">
                         </a>
                     </div>
                     <!--Right Col-->

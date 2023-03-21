@@ -45,7 +45,7 @@ if (isset($_GET['deleteall'])) {
 if (isset($_GET['deleteallevent'])) {
     $status = $_GET['deleteallevent'];
 
-    $sql = "DELETE FROM events";
+    $sql = "DELETE F ROM events";
 
     $result = VALIDATE_QUERY($sql);
     if ($result === true) {

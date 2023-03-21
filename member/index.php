@@ -25,10 +25,10 @@
                     <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body">
-                                <h4>Mails <span class="pull-right"><i class="ion-android-download f-s-30 text-primary"></i></span></h4>
-                                <h6 class="m-t-20 f-s-14">50 Mails</h6>
+                                <h4>Devotions <span class="pull-right"><i class="ion-android-download f-s-30 text-primary"></i></span></h4>
+                                <h6 class="m-t-20 f-s-14"><?= GET_TOTAL("devotions"); ?> Devotions</h6>
                                 <div class="progress m-t-0 h-7px">
-                                    <div role="progressbar" class="progress-bar bg-primary wow animated progress-animated w-50pc h-7px"></div>
+                                    <div role="progressbar" class="progress-bar bg-primary wow animated progress-animated w-<?= GET_TOTAL("devotions"); ?>pc h-7px"></div>
                                 </div>
                             </div>
                         </div>
@@ -37,9 +37,9 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4>News <span class="pull-right"><i class="ion-android-upload f-s-30 text-success"></i></span></h4>
-                                <h6 class="m-t-20 f-s-14">90 News</h6>
+                                <h6 class="m-t-20 f-s-14"><?= GET_TOTAL("posts"); ?> News</h6>
                                 <div class="progress m-t-0 h-7px">
-                                    <div role="progressbar" class="progress-bar bg-success wow animated progress-animated w-90pc h-7px"></div>
+                                    <div role="progressbar" class="progress-bar bg-success wow animated progress-animated w-<?= GET_TOTAL("posts"); ?>pc h-7px"></div>
                                 </div>
                             </div>
                         </div>
@@ -49,15 +49,15 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4>Events <span class="pull-right"><i class="ion-android-list f-s-30 text-danger"></i></span></h4>
-                                <h6 class="m-t-20 f-s-14">65 Events</h6>
+                                <h6 class="m-t-20 f-s-14"><?= GET_TOTAL("events"); ?> Events</h6>
                                 <div class="progress m-t-0 h-7px">
-                                    <div role="progressbar" class="progress-bar bg-danger wow animated progress-animated w-65pc h-7px"></div>
+                                    <div role="progressbar" class="progress-bar bg-danger wow animated progress-animated w-<?= GET_TOTAL("events"); ?>pc h-7px"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
 
                     <div class="col-xl-12">
                         <div class="card">
@@ -77,14 +77,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">
                                 <div class="text-center"><i class="icon ion-ios-paper-outline f-s-75 text-success"></i>
                                     <h4 class="m-b-2">Today's Word</h4>
-                                    <p class="p-l-30 p-r-30 m-t-15 m-b-30">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p><a href="#" class="btn btn-sm btn-success btn-block m-t-15">Study</a>
+                                    <p class="p-l-30 p-r-30 m-t-15 m-b-30"><?= $latest_devotion['devotion_title']?></p><a href="devotion-details?devotion=<?= $latest_devotion['devotion_slug']; ?>" class="btn btn-sm btn-success btn-block m-t-15">Study</a>
                                 </div>
                             </div>
                         </div>
@@ -123,15 +123,15 @@
                             <div class="card-body">
                                 <div class="text-center">
                                     <img src="./assets/images/users/2.jpg" class="rounded-circle m-t-15 w-75px" alt="">
-                                    <h4 class="m-t-15 m-b-2">Paul Custard</h4>
+                                    <h4 class="m-t-15 m-b-2"><?= $fullname; ?></h4>
                                     <p class="text-muted">ASU Member</p>
                                  
                                     <div class="row">
-                                        <div class="col-12 border-bottom-1 p-t-20 p-b-10"><span class="pull-left f-w-600">Name:</span> <span class="pull-right">Bob Springer</span>
+                                        <div class="col-12 border-bottom-1 p-t-20 p-b-10"><span class="pull-left f-w-600">Name:</span> <span class="pull-right"><?= $fullname; ?></span>
                                         </div>
-                                        <div class="col-12 border-bottom-1 p-t-10 p-b-10"><span class="pull-left f-w-600">Email:</span> <span class="pull-right">example@examplel.com</span>
+                                        <div class="col-12 border-bottom-1 p-t-10 p-b-10"><span class="pull-left f-w-600">Email:</span> <span class="pull-right"><?= $email; ?></span>
                                         </div>
-                                        <div class="col-12 p-t-10 p-b-10"><span class="pull-left f-w-600">Phone:</span> <span class="pull-right">+12 123 124 125</span>
+                                        <div class="col-12 p-t-10 p-b-10"><span class="pull-left f-w-600">Phone:</span> <span class="pull-right"><?= $phone; ?></span>
                                         </div>
                                     </div>
                                 </div>
