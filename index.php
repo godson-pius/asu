@@ -23,9 +23,9 @@ require_once 'components/header.php';
                             </h2>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-one" href="about">
+                            <a class="btn-one" href="member/register">
                                         <span class="txt">
-                                            discover more<i class="icon-refresh arrow"></i>
+                                            Register<i class="icon-refresh arrow"></i>
                                         </span>
                             </a>
                         </div>
