@@ -8,8 +8,8 @@
                 // Set session for global access
                 SET_SESSION('devotionId', $devotion_id);
             }
-
-            $sql = "SELECT * FROM likes WHERE type = 'd' AND member_id = 1 AND liked_id = $devotion_id";
+            $member_id = $_SESSION['member'];
+            $sql = "SELECT * FROM likes WHERE type = 'd' AND member_id = $member_id AND liked_id = $devotion_id";
             $execute = EXECUTE_SINGLE_ROW_QUERY($sql);
 
             if ($execute) {
@@ -52,7 +52,7 @@
                                 <h6>- <?= $devotion_bible; ?></h6>
                                 <hr>
                                 <br>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quod repudiandae quidem sunt ab animi eligendi harum, cupiditate sapiente voluptatum impedit officia aperiam possimus doloribus id ex consectetur, cumque soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime error non cupiditate nam, esse vero illo cum, aspernatur laudantium odio doloribus sint nesciunt dolorum voluptas in, corporis iste dolorem necessitatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure reprehenderit magnam aliquam, non similique earum voluptatem veniam cumque tempore temporibus esse rem quaerat, quae eius qui nemo neque dolor maxime!</p>
+                                <p><?= $devotion_body; ?></p>
 
                                 <!-- Like count -->
                                 <button data-liked="<?= $devotion_id; ?>" data-type="d" data-member="<?= $_SESSION['member']; ?>" onclick="likePost(this)" class="<?= $btn_style; ?>"><?= $btn_text; ?></button> - <span id="total" class="text-primary"><?= GET_TOTAL_WHERE("likes", "liked_id", $devotion_id); ?> likes</span>

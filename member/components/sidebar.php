@@ -8,11 +8,11 @@
 
                     <li class="nav-label">Components</li>
                     </li>
-                    <li><a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-email"></i> <span class="nav-text">Mail</span><span class="badge badge-success nav-badge">16</span></a>
+                    <li><a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-email"></i> <span class="nav-text">Mail</span></a>
                         <ul aria-expanded="false">
-                            <li><a href="mail">Inbox</a>
+                            <li><a href="inbox">Inbox</a>
                             </li>
-                            <li><a href="email-compose.html">Compose</a>
+                            <li><a href="compose">Compose</a>
                             </li>
                         </ul>
                     </li>
@@ -27,11 +27,7 @@
                     <li class="nav-label">Extra</li>
                     <li><a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-google-pages"></i> <span class="nav-text">Profile</span></a>
                         <ul aria-expanded="false">
-                            <li><a href="page-lock-screen.html">View Profile</a>
-                            </li>
-                            <li><a href="page-lock-screen.html">Lock Screen</a>
-                            </li>
-                            <li><a href="page-recover.html">Recover</a>
+                            <li><a href="setting">View Profile</a>
                             </li>
                         </ul>
                     </li>

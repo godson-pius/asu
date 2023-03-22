@@ -93,7 +93,7 @@
                 
                 <div class="row">
                     
-                    <div class="col-lg-8">
+                    <!-- <div class="col-lg-8">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Activity Timeline</h4>
@@ -116,13 +116,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">
                                 <div class="text-center">
-                                    <img src="./assets/images/users/2.jpg" class="rounded-circle m-t-15 w-75px" alt="">
+                                    <img src="assets/images/users/<?= $image; ?>" class="rounded-circle m-t-15 w-75px" alt="profile pics" width="100">
+
+                                    <!-- <div style="width: 100px; height: 100px; background-image: url(assets/images/users/<?= $image; ?>); background-position: center; background-size: cover;">
+                                                    </div> -->
                                     <h4 class="m-t-15 m-b-2"><?= $fullname; ?></h4>
                                     <p class="text-muted">ASU Member</p>
                                  

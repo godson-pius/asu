@@ -174,6 +174,22 @@ function SELECT_WHERE($table = null, $col = null, $data = null) {
     echo "<script>alert('Provide accurate arguments for SELECT_WHERE')</script>";
 }
 
+function SELECT_WHERE_WITH_AND_CLAUSE($table = null, $col = null, $data = null, $col2 = null, $data2 = null) {
+
+    if ($table != null && $col != null && $data != null && $col2 != null && $data2 != null) {
+        return "SELECT * FROM $table WHERE $col = '$data' AND $col2 = '$data2'";
+    }
+    echo "<script>alert('Provide accurate arguments for SELECT_WHERE')</script>";
+}
+
+function SELECT_WHERE_WITH_OR_CLAUSE($table = null, $orderby, $col = null, $data = null, $col2 = null, $data2 = null) {
+
+    if ($table != null && $col != null && $data != null && $col2 != null && $data2 != null) {
+        return "SELECT * FROM $table WHERE $col = '$data' OR $col2 = '$data2' ORDER BY $orderby ASC";
+    }
+    echo "<script>alert('Provide accurate arguments for SELECT_WHERE')</script>";
+}
+
 function SELECT_WHERE_ORDER($table = null, $col = null, $data = null, $id = null, $order = null) {
     if ($table != null && $id != null && $order != null && $col != null && $data != null) {
         return "SELECT * FROM $table WHERE $col = '$data' ORDER BY $id $order";
@@ -242,6 +258,26 @@ function GET_TOTAL_WHERE($table = null, $col = null, $data = null) {
 
     if ($table != null && $col != "null" && $data != "null") {
         $query = "SELECT * FROM $table WHERE $col = '$data'";
+        $execute = mysqli_query($link, $query);
+
+        if ($execute) {
+            if (mysqli_num_rows($execute) > 0) {
+                return mysqli_num_rows($execute);
+            } else {
+                return false;
+            }
+        } else {
+            return ERROR("Check if <i>" . strtoupper($table) . "</i> table or <i>" . strtoupper($col) . "</i> column matches with what you have in the database" );
+        }
+    }
+}
+
+//= This function is for getting total number in a specified column from the database
+function GET_TOTAL_WHERE_WITH_AND_CLAUSE($table = null, $col = null, $data = null, $col2 = null, $data2 = null) {
+    global $link;
+
+    if ($table != null && $col != "null" && $data != "null" && $col2 != "null" && $data2 != "null") {
+        $query = "SELECT * FROM $table WHERE $col = '$data' AND $col2 = '$data2'";
         $execute = mysqli_query($link, $query);
 
         if ($execute) {

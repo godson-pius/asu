@@ -41,6 +41,9 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
+            <a href="./compose">
+              <i class="bi bi-circle"></i><span>Compose</span>
+            </a>
             <a href="./messages">
               <i class="bi bi-circle"></i><span>View all</span>
             </a>
@@ -49,6 +52,25 @@
       </li><!-- End Contacts Nav -->
 
         <li class="nav-heading">Others</li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#members" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-microsoft-teams"></i><span>Members</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="members" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="./pending-members">
+                        <i class="bi bi-circle"></i><span>View Pending Members</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./members">
+                        <i class="bi bi-circle"></i><span>All members</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Contacts Nav -->
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#teams" data-bs-toggle="collapse" href="#">
@@ -82,7 +104,7 @@
 
                 <li>
                     <a href="./create-devotion">
-                        <i class="bi bi-circle"></i><span>Add Devetional</span>
+                        <i class="bi bi-circle"></i><span>Add Devotional</span>
                     </a>
                 </li>
             </ul>

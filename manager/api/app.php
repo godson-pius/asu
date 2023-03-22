@@ -96,12 +96,12 @@ if (isset($_GET['deleteallmessage'])) {
     }
 }
 
+// Devotions app
 
-//for teams=============================
-if (isset($_GET['delete_team'])) {
-    $id = $_GET['delete_team'];
+if (isset($_GET['deleteAllDev'])) {
+    $status = $_GET['deleteAllDev'];
 
-    $sql = "DELETE FROM teams WHERE team_id = $id";
+    $sql = "DELETE FROM devotions";
 
     $result = VALIDATE_QUERY($sql);
     if ($result === true) {
@@ -111,12 +111,36 @@ if (isset($_GET['delete_team'])) {
     }
 }
 
+if (isset($_GET['deleteDev'])) {
+    $id = $_GET['deleteDev'];
 
-//for partners =============================
-if (isset($_GET['delete-partner'])) {
-    $id = $_GET['delete-partner'];
+    $sql = "DELETE FROM devotions WHERE devotion_id = $id";
 
-    $sql = "DELETE FROM partners WHERE partner_id = $id";
+    $result = VALIDATE_QUERY($sql);
+    if ($result === true) {
+        echo "true";
+    } else {
+        echo false;
+    }
+}
+
+if (isset($_GET['approveMember'])) {
+    $id = $_GET['approveMember'];
+
+    $sql = "UPDATE members SET verified = 1 WHERE member_id = $id";
+
+    $result = VALIDATE_QUERY($sql);
+    if ($result === true) {
+        echo "true";
+    } else {
+        echo false;
+    }
+}
+
+if (isset($_GET['delMember'])) {
+    $id = $_GET['delMember'];
+
+    $sql = "DELETE FROM members WHERE member_id = $id";
 
     $result = VALIDATE_QUERY($sql);
     if ($result === true) {

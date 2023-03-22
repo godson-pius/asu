@@ -13,8 +13,14 @@ if (isset($_POST['login_btn'])) {
         $row = mysqli_fetch_assoc($result);
         extract($row);
         
-        SET_SESSION("member", $member_id);
+        if ($verified == 0) {
+            echo "<script>alert('Account not verified! Please contact admin')</script>";
+        } else {
+            SET_SESSION("member", $member_id);
+            SET_SESSION("member_name", $fullname);
+        
         REDIRECT('index');
+        }
     } else {
         echo "<script>alert('Invalid login credentials')</script>";
     }

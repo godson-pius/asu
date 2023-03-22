@@ -111,6 +111,45 @@ if (document.querySelectorAll('#deleteEvent')) {
     })
 }
 
+// fOR Devotions =================================================================
+if (document.querySelectorAll('#deletealldev')) {
+    document.querySelectorAll('#deletealldev').forEach((el) => {
+        el.onclick = () => {
+            const conf = confirm('Are you sure you want to delete all devotion?');
+            if (conf) {
+                fetch(`api/app.php?deleteAllDev=true`).then(e => e).then(e => e.text()).then(e => {
+                    if (e === "true") {
+                        showNotification('Devotion deleted')
+                        el.parentElement.parentElement.parentElement.remove()
+                    } else {
+                        alert("Failed to delete devotion! Please try again")
+                    }
+                })
+            }
+        }
+    })
+}
+
+if (document.querySelectorAll('#deleteDev')) {
+    document.querySelectorAll('#deleteDev').forEach((el) => {
+        el.onclick = () => {
+            const id = el.dataset.id
+
+            const conf = confirm('Are you sure you want to delete this devotion?');
+            if (conf) {
+                fetch(`api/app.php?deleteDev=${id}`).then(e => e).then(e => e.text()).then(e => {
+                    if (e === "true") {
+                        showNotification('devotion deleted')
+                        el.parentElement.parentElement.parentElement.remove()
+                    } else {
+                        alert("Failed to delete devotion")
+                    }
+                })
+            }
+        }
+    })
+}
+
 // fOR Messsages =================================================================
 
 if (document.querySelectorAll('#deleteMessage')) {
@@ -150,19 +189,21 @@ if (document.querySelector('#deleteAllMessage')) {
     }
 }
 
-if (document.querySelector('#deleteTeam')) {
-    document.querySelectorAll('#deleteTeam').forEach((el) => {
+// fOR Members =================================================================
+
+if (document.querySelectorAll('#approveMember')) {
+    document.querySelectorAll('#approveMember').forEach((el) => {
         el.onclick = () => {
             const id = el.dataset.id
 
-            const conf = confirm('Are you sure you want to delete team member?');
+            const conf = confirm('Are you sure you want to approve member?');
             if (conf) {
-                fetch(`api/app.php?delete_team=true`).then(e => e).then(e => e.text()).then(e => {
+                fetch(`api/app.php?approveMember=${id}`).then(e => e).then(e => e.text()).then(e => {
                     if (e === "true") {
-                        showNotification('Team member have been deleted')
-                        window.location.reload()
+                        showNotification('Member approved')
+                        el.parentElement.parentElement.parentElement.remove()
                     } else {
-                        alert("Failed to delete team member! Try again")
+                        alert("Failed to approve member")
                     }
                 })
             }
@@ -170,19 +211,19 @@ if (document.querySelector('#deleteTeam')) {
     })
 }
 
-if (document.querySelector('#deletePartner')) {
-    document.querySelectorAll('#deletePartner').forEach((el) => {
+if (document.querySelectorAll('#delMember')) {
+    document.querySelectorAll('#delMember').forEach((el) => {
         el.onclick = () => {
             const id = el.dataset.id
 
-            const conf = confirm('Are you sure you want to delete partner?');
+            const conf = confirm('Are you sure you want to delete member?');
             if (conf) {
-                fetch(`api/app.php?delete-partner=true`).then(e => e).then(e => e.text()).then(e => {
+                fetch(`api/app.php?delMember=${id}`).then(e => e).then(e => e.text()).then(e => {
                     if (e === "true") {
-                        showNotification('Partner have been deleted')
-                        window.location.reload()
+                        showNotification('Member deleted')
+                        el.parentElement.parentElement.parentElement.remove()
                     } else {
-                        alert("Failed to delete partner! Try again")
+                        alert("Failed to delete member")
                     }
                 })
             }

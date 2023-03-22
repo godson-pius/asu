@@ -4,9 +4,42 @@ require_once 'components/header.php';
 
 if (isset($_GET['news'])) {
     $post_slug = $_GET['news'];
+
     $posts = EXECUTE_SINGLE_ROW_QUERY(SELECT_WHERE("posts", "post_slug", $post_slug));
     extract($posts);
+
+   $comment_count = GET_TOTAL_WHERE_WITH_AND_CLAUSE("comments", "post_id", $post_id, "type", "n");
+
+    $like_count = GET_TOTAL_WHERE_WITH_AND_CLAUSE("likes", "liked_id", $post_id, "type", "n");
+
+    $all_comments = EXECUTE_QUERY(SELECT_WHERE_WITH_AND_CLAUSE("comments", "post_id", $post_id, "type", "n"));
+
+    $member_id = $_SESSION['member'];
+
+    $sql = "SELECT * FROM likes WHERE type = 'n' AND member_id = $member_id AND liked_id = $post_id";
+    $execute = EXECUTE_SINGLE_ROW_QUERY($sql);
+
+    if ($execute) {
+        $like_style = 'fa fa-thumbs-up';
+    } else {
+        $like_style = 'fa fa-thumbs-o-up';
+    }
 }
+
+if (isset($_POST['submit_comment'])) {
+    $member = GET_SESSION('member_name');
+    $comment = ALLOW_SAFE_SYMBOLS(SANITIZE($_POST['comment']));
+
+    $sql = "INSERT INTO comments (post_id, member, comment, type) VALUES ($post_id, '$member', '$comment', 'n')";
+    $result = VALIDATE_QUERY($sql);
+
+    if ($result === true) {
+        echo "<script>alert('Comment added')</script>";
+    } else {
+        echo "<script>alert('Failed to add comment! Please try again!')</script>";
+    }
+}
+
 
 ?>
 
@@ -69,6 +102,12 @@ if (isset($_GET['news'])) {
                                                 <i class="fa fa-comment-o" aria-hidden="true"></i>
                                                 <a href="#"><?= $comment_count; ?> Comments</a>
                                             </li>
+                                            
+                                            <li style="cursor: pointer;">
+                                                <i data-liked="<?= $post_id; ?>" data-type="n" data-member="<?= $_SESSION['member']; ?>" onclick="likePost(this)" class="<?= $like_style; ?>" aria-hidden="true"></i>
+                                                <a id="total"><?= $like_count; ?> likes</a>
+                                            </li>
+
                                         </ul>
                                         <div class="text-inner">
                                             <h3 class="blog-title"><?= $post_title; ?></h3>
@@ -76,11 +115,9 @@ if (isset($_GET['news'])) {
                                         <div class="text">
                                             <p><?= $post_desc; ?></p>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
-
                             <div class="tag-social-share-box">
                                 <div class="tag-box">
                                     <div class="title">
@@ -94,7 +131,14 @@ if (isset($_GET['news'])) {
 
                             <!-- Comment and Add Comments -->
 
-                            <?php //require_once 'components/comments.php'; ?>
+                            <?php 
+                                if (isset($_SESSION['member'])) {
+                                    require_once 'components/comments.php';
+                                } else {
+                                    echo "<h2>Please login to comment!</h2>";
+                                    echo "<a class='' href='member/login'>Login through this link</a>";
+                                }
+                            ?>
 
                         </div>
                     </div>
@@ -235,6 +279,9 @@ if (isset($_GET['news'])) {
 
     <!-- thm custom script -->
     <script src="assets/js/custom.js"></script>
+
+    <!-- ASU CUSTOM -->
+    <script src="./assets/js/like.js"></script>
 
 
 

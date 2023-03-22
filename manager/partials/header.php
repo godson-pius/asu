@@ -12,10 +12,17 @@ $news = EXECUTE_QUERY(SELECT_ALL("posts", "post_id"));
 $events = EXECUTE_QUERY(SELECT_ALL("events", "event_id"));
 
 // For messages - Message page
-$messages = EXECUTE_QUERY(SELECT_ALL("messages", "message_id"));
+$messages = EXECUTE_QUERY(SELECT_WHERE("messages", "admin", 1));
+
+// For devotions - index page
+$devotions = EXECUTE_QUERY(SELECT_ALL("devotions", "devotion_id"));
 
 // For all categories
 $categories = EXECUTE_QUERY(SELECT_ALL("categories", "cat_id"));
+
+// For all Members - Member page
+$members = EXECUTE_QUERY(SELECT_ALL("members", "member_id"));
+
 
 // For all partners - Index page
 //$partners = EXECUTE_QUERY(SELECT_ALL("partners", "partner_id"));

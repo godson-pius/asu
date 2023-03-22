@@ -241,6 +241,7 @@
                                                 <li><a href="anambra-state">About Anambra State</a></li>
                                                 <li><a href="about">About ASU Uk & Ireland</a></li>
                                                 <li><a href="executives">Our Executives</a></li>
+                                                <li><a href="gallery">Gallery</a></li>
                                             </ul>
                                         </li>
 
@@ -248,9 +249,15 @@
 
                                         <li class="<?php if ($headerTitle == "news") : echo "current"; endif; ?>"><a href="news"><span>News</span></a></li>
 
-                                        <li class="<?php if ($headerTitle == "gallery") : echo "current"; endif; ?>"><a href="gallery"><span>Gallery</span></a></li>
-
                                         <li class="<?php if ($headerTitle == "contact") : echo "current"; endif; ?>"><a href="contact"><span>Contact</span></a></li>
+
+                                        <li class="dropdown"><a href="member"><span>Member</span></a>
+                                            <ul>
+                                                <li><a href="member">Dashboard</a></li>
+                                                <li><a href="member/login">Login</a></li>
+                                                <li><a href="member/register">Register</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                             </nav>

@@ -6,6 +6,37 @@ if (isset($_GET['event'])) {
     $event_slug = $_GET['event'];
     $events = EXECUTE_SINGLE_ROW_QUERY(SELECT_WHERE("events", "event_slug", $event_slug));
     extract($events);
+
+    $comment_count = GET_TOTAL_WHERE_WITH_AND_CLAUSE("comments", "post_id", $event_id, "type", "e");
+
+    $like_count = GET_TOTAL_WHERE_WITH_AND_CLAUSE("likes", "liked_id", $event_id, "type", "e");
+
+    $all_comments = EXECUTE_QUERY(SELECT_WHERE_WITH_AND_CLAUSE("comments", "post_id", $event_id, "type", "e"));
+
+    $member_id = $_SESSION['member'];
+
+    $sql = "SELECT * FROM likes WHERE type = 'e' AND member_id = $member_id AND liked_id = $event_id";
+    $execute = EXECUTE_SINGLE_ROW_QUERY($sql);
+
+    if ($execute) {
+        $like_style = 'fa fa-thumbs-up';
+    } else {
+        $like_style = 'fa fa-thumbs-o-up';
+    }
+
+    if (isset($_POST['submit_comment'])) {
+        $member = GET_SESSION('member_name');
+        $comment = ALLOW_SAFE_SYMBOLS(SANITIZE($_POST['comment']));
+    
+        $sql = "INSERT INTO comments (post_id, member, comment, type) VALUES ($event_id, '$member', '$comment', 'e')";
+        $result = VALIDATE_QUERY($sql);
+    
+        if ($result === true) {
+            echo "<script>alert('Comment added')</script>";
+        } else {
+            echo "<script>alert('Failed to add comment! Please try again!')</script>";
+        }
+    }
 }
 
 ?>
@@ -74,6 +105,16 @@ if (isset($_GET['event'])) {
                                                 <i class="fa fa-venue" aria-hidden="true"></i>
                                                 <a href="#">Venue: <?= $event_venue; ?></a>
                                             </li>
+
+                                            <li>
+                                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                                <a href="#"><?= $comment_count; ?> Comments</a>
+                                            </li>
+
+                                            <li style="cursor: pointer;">
+                                                <i data-liked="<?= $event_id; ?>" data-type="e" data-member="<?= $_SESSION['member']; ?>" onclick="likePost(this)" class="<?= $like_style; ?>" aria-hidden="true"></i>
+                                                <a id="total"><?= $like_count; ?> likes</a>
+                                            </li>
                                         </ul>
                                         <div class="text-inner">
                                             <h3 class="blog-title"><?= $event_title; ?></h3>
@@ -88,7 +129,16 @@ if (isset($_GET['event'])) {
 
                             <!-- Comment and Add Comments -->
 
-                            <?php //require_once 'components/comments.php'; ?>
+                             <!-- Comment and Add Comments -->
+
+                             <?php 
+                                if (isset($_SESSION['member'])) {
+                                    require_once 'components/comments.php';
+                                } else {
+                                    echo "<h2>Please login to comment!</h2>";
+                                    echo "<a class='' href='member/login'>Login through this link</a>";
+                                }
+                            ?>
 
                         </div>
                     </div>
@@ -229,6 +279,9 @@ if (isset($_GET['event'])) {
 
     <!-- thm custom script -->
     <script src="assets/js/custom.js"></script>
+
+    <!-- ASU CUSTOM -->
+    <script src="./assets/js/like.js"></script>
 
 
 

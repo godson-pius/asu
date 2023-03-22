@@ -1,10 +1,13 @@
 <?php
     require_once '../manager/prepared/prepared.php';
+    ACCESS_USING_SESSION('member', 'login');
     
     $latest_devotion = EXECUTE_SINGLE_ROW_QUERY(SELECT_ALL_LIMIT("devotions", "devotion_id", 0, 1));
     $events = EXECUTE_QUERY(SELECT_ALL("events", "event_id"));
     $news = EXECUTE_QUERY(SELECT_ALL("posts", "post_id"));
     $devotions = EXECUTE_QUERY(SELECT_ALL("devotions", "devotion_id"));
+
+    $messages = EXECUTE_QUERY(SELECT_WHERE_WITH_OR_CLAUSE("messages", "message_id", "dest", $_SESSION['member'], "all_member", 1));
 
 
 
@@ -70,7 +73,9 @@
                 </div>
                 <div class="header-right">
                     <ul>
-                        <li class="icons"><a href="javascript:void(0)"><i class="mdi mdi-bell f-s-18" aria-hidden="true"></i><div class="pulse-css"></div></a>
+                        <li class="icons">
+                            <!-- <a href="javascript:void(0)"><i class="mdi mdi-bell f-s-18" aria-hidden="true"></i><div class="pulse-css"></div>
+                        </a> -->
                             <div class="drop-down animated bounceInDown">
                                 <div class="dropdown-content-heading"><span class="text-left">Recent Notifications</span>
                                 </div>
@@ -118,7 +123,9 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="icons"><a href="javascript:void(0)"><i class="mdi mdi-comment f-s-18" aria-hidden="true"></i><div class="pulse-css"></div></a>
+                        <li class="icons">
+                            <!-- <a href="javascript:void(0)"><i class="mdi mdi-comment f-s-18" aria-hidden="true"></i><div class="pulse-css"></div>
+                        </a> -->
                             <div class="drop-down animated bounceInDown">
                                 <div class="dropdown-content-heading"><span class="text-left">2 New Messages</span>
                                 </div>
@@ -171,9 +178,9 @@
                             <div class="drop-down dropdown-profile animated bounceInDown">
                                 <div class="dropdown-content-body">
                                     <ul>
-                                        <li><a href="#"><i class="mdi mdi-email"></i> <span>Inbox</span></a>
+                                        <li><a href="inbox"><i class="mdi mdi-email"></i> <span>Inbox</span></a>
                                         </li>
-                                        <li><a href="#"><i class="mdi mdi-settings"></i> <span>Setting</span></a>
+                                        <li><a href="setting"><i class="mdi mdi-settings"></i> <span>Setting</span></a>
                                         </li>
                                         <li><a href="logout"><i class="icon-power"></i> <span>Logout</span></a>
                                         </li>

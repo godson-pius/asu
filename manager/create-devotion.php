@@ -7,12 +7,12 @@ if (isset($_POST['submit_btn'])) {
   $slug = CHECK_INPUT(SANITIZE($_POST['slug']));
   $bible = CHECK_INPUT(SANITIZE($_POST['bible']));
   $desc = CHECK_INPUT(SANITIZE(ALLOW_SAFE_SYMBOLS($_POST['desc'])));
-//   $file = $_FILES['image'];
-//   $image = $_FILES['image']['name'];
-//   $tmp_name = $_FILES['image']['tmp_name'];
-//   move_uploaded_file($tmp_name, "../assets/images/news/$image");
+  $file = $_FILES['image'];
+  $image = $_FILES['image']['name'];
+  $tmp_name = $_FILES['image']['tmp_name'];
+  move_uploaded_file($tmp_name, "../assets/images/devotions/$image");
 
-  $sql = "INSERT INTO devotions (devotion_title, devotion_slug, devotion_bible, devotion_body) VALUES ('$title', '$slug', '$bible', '$desc')";
+  $sql = "INSERT INTO devotions (devotion_title, devotion_slug, devotion_bible, devotion_body, devotion_img) VALUES ('$title', '$slug', '$bible', '$desc', '$image')";
   $result = VALIDATE_QUERY($sql);
 
   if ($result) {
@@ -60,11 +60,11 @@ if (isset($_POST['submit_btn'])) {
                 <div class="form-group">
                     <input type="text" name="bible" required class="form-control mb-2" id="bible" multiple placeholder="Devotion scriptures">
                 </div>
-<!-- 
+
                   <div class="form-group">
                     <label for="image" class="mb-1">Choose Image</label>
                       <input type="file" name="image" required class="form-control mb-2" id="image">
-                  </div> -->
+                  </div>
 
                   <div class="form-group">
                       <textarea name="desc" id="desc" class="form-control"></textarea>
