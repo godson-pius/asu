@@ -438,6 +438,306 @@ require_once 'components/header.php';
             </div>
             <!--End Single Service Style1-->
 
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d1.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d2.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d3.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d4.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d5.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d6.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d7.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d8.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d9.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d10.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d11.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d12.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d13.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d14.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d15.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d16.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d17.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d18.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d19.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
+            <!--Start Single Service Style1-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="single-service-style2">
+                    <div class="img-holder">
+                        <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                        <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/d20.jpeg); background-position: center; background-size: cover;">
+                        </div>
+                    </div>
+                    <div class="text-holder text-center">
+                        <h3><a href="industries-details.html">Gallery</a></h3>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Service Style1-->
+
 
 
         </div>
