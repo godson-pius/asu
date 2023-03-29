@@ -41,7 +41,7 @@
                 <div class="row">
 
                    <!--Start Single Team Style1-->
-                   <div class="single-team-style1">
+                   <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/team-v1-1.jpg" alt="" />
@@ -55,7 +55,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
 
                      <!--Start Single Team Style1-->
@@ -79,7 +79,7 @@
                           
 
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/onu.jpg" alt="" />
@@ -93,11 +93,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/14.jpg" alt="" />
@@ -111,11 +111,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                            
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/13.jpg" alt="" />
@@ -129,11 +129,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
 
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/12.jpg" alt="" />
@@ -147,11 +147,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/10.jpg" alt="" />
@@ -165,11 +165,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/9.jpg" alt="" />
@@ -183,11 +183,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/8.jpg" alt="" />
@@ -201,11 +201,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/7.jpg" alt="" />
@@ -219,11 +219,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/6.jpg" alt="" />
@@ -237,11 +237,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/5.jpg" alt="" />
@@ -255,11 +255,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/4.jpg" alt="" />
@@ -273,11 +273,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/3.jpg" alt="" />
@@ -291,11 +291,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                            
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/2.jpg" alt="" />
@@ -309,11 +309,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/1.jpg" alt="" />
@@ -327,11 +327,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/off.jpg" alt="" />
@@ -345,7 +345,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
 
                 </div>

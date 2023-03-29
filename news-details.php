@@ -14,16 +14,18 @@ if (isset($_GET['news'])) {
 
     $all_comments = EXECUTE_QUERY(SELECT_WHERE_WITH_AND_CLAUSE("comments", "post_id", $post_id, "type", "n"));
 
-    $member_id = $_SESSION['member'];
+    if (isset($_SESSION['member']) && isset($_SESSION['member_name'])) {
+        $member_id = $_SESSION['member'];
 
-    $sql = "SELECT * FROM likes WHERE type = 'n' AND member_id = $member_id AND liked_id = $post_id";
-    $execute = EXECUTE_SINGLE_ROW_QUERY($sql);
+        $sql = "SELECT * FROM likes WHERE type = 'n' AND member_id = $member_id AND liked_id = $post_id";
+        $execute = EXECUTE_SINGLE_ROW_QUERY($sql);
 
-    if ($execute) {
-        $like_style = 'fa fa-thumbs-up';
-    } else {
-        $like_style = 'fa fa-thumbs-o-up';
-    }
+        if ($execute) {
+            $like_style = 'fa fa-thumbs-up';
+        } else {
+            $like_style = 'fa fa-thumbs-o-up';
+        }
+    } 
 }
 
 if (isset($_POST['submit_comment'])) {

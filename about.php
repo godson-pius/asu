@@ -95,7 +95,7 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                             data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": false, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "1" } , "992":{ "items" : "2" }, "1200":{ "items" : "3" }}}'>
 
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/team-v1-1.jpg" alt="" />
@@ -109,7 +109,7 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
 
                             <!--Start Single Team Style1-->
@@ -131,7 +131,7 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                             <!--End Single Team Style1-->
 
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/onu.jpg" alt="" />
@@ -145,11 +145,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/14.jpg" alt="" />
@@ -163,11 +163,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                            
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/13.jpg" alt="" />
@@ -181,11 +181,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
 
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/12.jpg" alt="" />
@@ -199,11 +199,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/10.jpg" alt="" />
@@ -217,11 +217,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/9.jpg" alt="" />
@@ -235,11 +235,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/8.jpg" alt="" />
@@ -253,11 +253,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/7.jpg" alt="" />
@@ -271,11 +271,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/6.jpg" alt="" />
@@ -289,11 +289,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/5.jpg" alt="" />
@@ -307,11 +307,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/4.jpg" alt="" />
@@ -325,11 +325,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/3.jpg" alt="" />
@@ -343,11 +343,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                            
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/2.jpg" alt="" />
@@ -361,11 +361,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/1.jpg" alt="" />
@@ -379,11 +379,11 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                             <!--Start Single Team Style1-->
-                            <div class="single-team-style1">
+                            <!-- <div class="single-team-style1">
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="assets/images/team/off.jpg" alt="" />
@@ -397,7 +397,7 @@ The 2022 estimated population is 5.53m. The state is divided into 21 local gover
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--End Single Team Style1-->
                             
                         </div>

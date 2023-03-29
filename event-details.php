@@ -13,29 +13,33 @@ if (isset($_GET['event'])) {
 
     $all_comments = EXECUTE_QUERY(SELECT_WHERE_WITH_AND_CLAUSE("comments", "post_id", $event_id, "type", "e"));
 
-    $member_id = $_SESSION['member'];
+    if (isset($_SESSION['member']) && isset($_SESSION['member_name'])) {
+        $member_id = $_SESSION['member'];
 
-    $sql = "SELECT * FROM likes WHERE type = 'e' AND member_id = $member_id AND liked_id = $event_id";
-    $execute = EXECUTE_SINGLE_ROW_QUERY($sql);
+        $sql = "SELECT * FROM likes WHERE type = 'e' AND member_id = $member_id AND liked_id = $event_id";
+        $execute = EXECUTE_SINGLE_ROW_QUERY($sql);
 
-    if ($execute) {
-        $like_style = 'fa fa-thumbs-up';
-    } else {
-        $like_style = 'fa fa-thumbs-o-up';
-    }
-
-    if (isset($_POST['submit_comment'])) {
-        $member = GET_SESSION('member_name');
-        $comment = ALLOW_SAFE_SYMBOLS(SANITIZE($_POST['comment']));
-    
-        $sql = "INSERT INTO comments (post_id, member, comment, type) VALUES ($event_id, '$member', '$comment', 'e')";
-        $result = VALIDATE_QUERY($sql);
-    
-        if ($result === true) {
-            echo "<script>alert('Comment added')</script>";
+        if ($execute) {
+            $like_style = 'fa fa-thumbs-up';
         } else {
-            echo "<script>alert('Failed to add comment! Please try again!')</script>";
+            $like_style = 'fa fa-thumbs-o-up';
         }
+
+        if (isset($_POST['submit_comment'])) {
+            $member = GET_SESSION('member_name');
+            $comment = ALLOW_SAFE_SYMBOLS(SANITIZE($_POST['comment']));
+        
+            $sql = "INSERT INTO comments (post_id, member, comment, type) VALUES ($event_id, '$member', '$comment', 'e')";
+            $result = VALIDATE_QUERY($sql);
+        
+            if ($result === true) {
+                echo "<script>alert('Comment added')</script>";
+            } else {
+                echo "<script>alert('Failed to add comment! Please try again!')</script>";
+            }
+        }
+    } else {
+        REDIRECT("login");
     }
 }
 

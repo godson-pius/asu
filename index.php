@@ -35,7 +35,7 @@ require_once 'components/header.php';
 
             <!-- Slide -->
             <div class="slide">
-                <div class="image-layer" style="background-image:url(assets/images/slides/slide-v1-2.jpg)">
+                <div class="image-layer" style="background-image:url(assets/images/slides/s1.jpg)">
                 </div>
                 <div class="auto-container">
                     <div class="content">
@@ -44,7 +44,257 @@ require_once 'components/header.php';
                         </div>
                         <div class="big-title">
                             <h2>
-                                Igwe Bu Ike.
+                                Anambra State House <br> Of Assembly Complex
+                            </h2>
+                        </div>
+                        <div class="btns-box">
+                            <a class="btn-one" href="about.html">
+                                        <span class="txt">
+                                            discover more<i class="icon-refresh arrow"></i>
+                                        </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="slide">
+                <div class="image-layer" style="background-image:url(assets/images/slides/s2.jpg)">
+                </div>
+                <div class="auto-container">
+                    <div class="content">
+                        <div class="sub-title">
+                            <h3>There's Strength In Unity</h3>
+                        </div>
+                        <div class="big-title">
+                            <h2>
+                                Uli campus
+                            </h2>
+                        </div>
+                        <div class="btns-box">
+                            <a class="btn-one" href="about.html">
+                                        <span class="txt">
+                                            discover more<i class="icon-refresh arrow"></i>
+                                        </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="slide">
+                <div class="image-layer" style="background-image:url(assets/images/slides/s3.jpg)">
+                </div>
+                <div class="auto-container">
+                    <div class="content">
+                        <div class="sub-title">
+                            <h3>There's Strength In Unity</h3>
+                        </div>
+                        <div class="big-title">
+                            <h2>
+                                Med block
+                            </h2>
+                        </div>
+                        <div class="btns-box">
+                            <a class="btn-one" href="about.html">
+                                        <span class="txt">
+                                            discover more<i class="icon-refresh arrow"></i>
+                                        </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="slide">
+                <div class="image-layer" style="background-image:url(assets/images/slides/s4.jpg)">
+                </div>
+                <div class="auto-container">
+                    <div class="content">
+                        <div class="sub-title">
+                            <h3>There's Strength In Unity</h3>
+                        </div>
+                        <div class="big-title">
+                            <h2>
+                                FIRS Complex <br> In Awka
+                            </h2>
+                        </div>
+                        <div class="btns-box">
+                            <a class="btn-one" href="about.html">
+                                        <span class="txt">
+                                            discover more<i class="icon-refresh arrow"></i>
+                                        </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="slide">
+                <div class="image-layer" style="background-image:url(assets/images/slides/s5.jpg)">
+                </div>
+                <div class="auto-container">
+                    <div class="content">
+                        <div class="sub-title">
+                            <h3>Nnewi Ultra Modern Main Market</h3>
+                        </div>
+                        <div class="big-title">
+                            <h2>
+                                The Larges Automobile <br> Market In Africa
+                            </h2>
+                        </div>
+                        <div class="btns-box">
+                            <a class="btn-one" href="about.html">
+                                        <span class="txt">
+                                            discover more<i class="icon-refresh arrow"></i>
+                                        </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="slide">
+                <div class="image-layer" style="background-image:url(assets/images/slides/s6.jpg)">
+                </div>
+                <div class="auto-container">
+                    <div class="content">
+                        <div class="sub-title">
+                            <h3>There's Strength In Unity</h3>
+                        </div>
+                        <div class="big-title">
+                            <h2>
+                                Anambra State <br> Government House AWKA
+                            </h2>
+                        </div>
+                        <div class="btns-box">
+                            <a class="btn-one" href="about.html">
+                                        <span class="txt">
+                                            discover more<i class="icon-refresh arrow"></i>
+                                        </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide -->
+            <div class="slide">
+                <div class="image-layer" style="background-image:url(assets/images/slides/s7.jpg)">
+                </div>
+                <div class="auto-container">
+                    <div class="content">
+                        <div class="sub-title">
+                            <h3>There's Strength In Unity</h3>
+                        </div>
+                        <div class="big-title">
+                            <h2>
+                                Anambra State Ultra <br> Modern City Project
+                            </h2>
+                        </div>
+                        <div class="btns-box">
+                            <a class="btn-one" href="about.html">
+                                        <span class="txt">
+                                            discover more<i class="icon-refresh arrow"></i>
+                                        </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="slide">
+                <div class="image-layer" style="background-image:url(assets/images/slides/s8.jpg)">
+                </div>
+                <div class="auto-container">
+                    <div class="content">
+                        <div class="sub-title">
+                            <h3>There's Strength In Unity</h3>
+                        </div>
+                        <div class="big-title">
+                            <h2>
+                                Second Niger bridge <br> 91% complete
+                            </h2>
+                        </div>
+                        <div class="btns-box">
+                            <a class="btn-one" href="about.html">
+                                        <span class="txt">
+                                            discover more<i class="icon-refresh arrow"></i>
+                                        </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="slide">
+                <div class="image-layer" style="background-image:url(assets/images/slides/s9.jpg)">
+                </div>
+                <div class="auto-container">
+                    <div class="content">
+                        <div class="sub-title">
+                            <h3>Julius Berger test’s and commissions the street light</h3>
+                        </div>
+                        <div class="big-title">
+                            <h2>
+                                Second Niger Bridge
+                            </h2>
+                        </div>
+                        <div class="btns-box">
+                            <a class="btn-one" href="about.html">
+                                        <span class="txt">
+                                            discover more<i class="icon-refresh arrow"></i>
+                                        </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="slide">
+                <div class="image-layer" style="background-image:url(assets/images/slides/s10.jpg)">
+                </div>
+                <div class="auto-container">
+                    <div class="content">
+                        <div class="sub-title">
+                            <h3>There's Strength In Unity</h3>
+                        </div>
+                        <div class="big-title">
+                            <h2>
+                                Our Famous Onitsha Bridge
+                            </h2>
+                        </div>
+                        <div class="btns-box">
+                            <a class="btn-one" href="about.html">
+                                        <span class="txt">
+                                            discover more<i class="icon-refresh arrow"></i>
+                                        </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide -->
+            <div class="slide">
+                <div class="image-layer" style="background-image:url(assets/images/slides/s11.jpg)">
+                </div>
+                <div class="auto-container">
+                    <div class="content">
+                        <div class="sub-title">
+                            <h3>There's Strength In Unity</h3>
+                        </div>
+                        <div class="big-title">
+                            <h2>
+                                Governor Soludo <br> Presenting The Budget
                             </h2>
                         </div>
                         <div class="btns-box">
@@ -136,12 +386,7 @@ require_once 'components/header.php';
                     <ul>
                         <li>
                             <div class="img-box">
-                                <img src="assets/images/about/about-style1__image-1.jpg" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-box">
-                                <img src="assets/images/about/about-style1__image-2.jpg" alt="">
+                                <img src="assets/images/slides/map.jpg" alt="">
                             </div>
                         </li>
                     </ul>
@@ -321,6 +566,10 @@ require_once 'components/header.php';
     </div>
 </section>
 <!--End Blog Style1 Area-->
+
+<!--Start event Style1 Area-->
+
+<!--End event Style1 Area-->
 
 <!--Start slogan area-->
 <section class="slogan-area">
