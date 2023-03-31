@@ -8,6 +8,9 @@
 
     // For all categories
     $categories = EXECUTE_QUERY(SELECT_ALL("categories", "cat_id"));
+
+    // For all galleries
+    $galleries = EXECUTE_QUERY(SELECT_ALL("galleries", "gallery_id"));
 ?>
 
 

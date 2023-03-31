@@ -110,6 +110,19 @@
             </ul>
         </li><!-- End Contacts Nav -->
 
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#gallery" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-app-indicator"></i><span>Gallery</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="gallery" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="./add-image">
+                        <i class="bi bi-circle"></i><span>Add Image</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Contacts Nav -->
+
     <!-- End Contacts Nav -->
 
 

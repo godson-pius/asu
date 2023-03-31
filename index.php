@@ -313,59 +313,201 @@ require_once 'components/header.php';
 </section>
 <!-- End Main Slider -->
 
-<!--Start Features Style1 Area-->
-<!-- <section class="features-style1-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="features-style1__content">
-                    <ul>
-                        <li>
-                            <div class="single-features-style1">
-                                <div class="icon-holder">
-                                    <div class="box"></div>
-                                    <span class="icon-"></span>
-                                </div>
-                                <div class="text-holder">
-                                    <h3><a href="services-single-1.html">Dumpster Sizes</a></h3>
-                                    <p>There are many of passages of lorem Ipsum, but the majori have suffered
-                                        in some form.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="single-features-style1">
-                                <div class="icon-holder">
-                                    <div class="box"></div>
-                                    <span class="icon-garbage-can"></span>
-                                </div>
-                                <div class="text-holder">
-                                    <h3><a href="services-single-2.html">Waste Collection</a></h3>
-                                    <p>There are many of passages of lorem Ipsum, but the majori have suffered
-                                        in some form.</p>
+        <!--Start Team Style1 Area-->
+        <section class="team-style1-area team-element-page2 pd120">
+            <div class="container">
+                <div class="sec-title text-center">
+                    <h2>Anambra Monuments</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+
+                        <div class="theme_carousel team-style1-carousel owl-dot-style1 owl-theme owl-carousel rtl-carousel"
+                            data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": false, "dots": true, "autoplay": true, "autoplayTimeout": 5000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "1" } , "992":{ "items" : "2" }, "1200":{ "items" : "3" }}}'>
+
+                            <!--Start Single Team Style1-->
+                            <div class="single-team-style1">
+                                <div class="img-holder">
+                                    <div class="inner">
+                                    <div style="width: 370px; height: 450px; background-image: url(assets/images/slides/s1.jpg); background-position: center; background-size: cover;"></div>
+                                    </div>
+                                    <div class="title-holder text-center">
+                                        <h2><a href="#"> Anambra State House Of Assembly Complex</a></h2>
+                                        <div class="overlay-title">
+                                            <h2><a href="#"> Anambra State House Of Assembly Complex</a></h2>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="single-features-style1">
-                                <div class="icon-holder">
-                                    <div class="box"></div>
-                                    <span class="icon-calendar"></span>
-                                </div>
-                                <div class="text-holder">
-                                    <h3><a href="services-single-3.html">Pickup Schedule</a></h3>
-                                    <p>There are many of passages of lorem Ipsum, but the majori have suffered
-                                        in some form.</p>
+                            <!--End Single Team Style1-->
+
+                            <!--Start Single Team Style1-->
+                            <div class="single-team-style1">
+                                <div class="img-holder">
+                                    <div class="inner">
+                                    <div style="width: 370px; height: 450px; background-image: url(assets/images/slides/s2.jpg); background-position: center; background-size: cover;"></div>
+                                    </div>
+                                    <div class="title-holder text-center">
+                                        <h2><a href="#">Uli Campus</a></h2>
+                                        <div class="overlay-title">
+                                            <h2><a href="#">Uli Campus</a></h2>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                            <!--End Single Team Style1-->
+                            
+                            <!--Start Single Team Style1-->
+                            <div class="single-team-style1">
+                                <div class="img-holder">
+                                    <div class="inner">
+                                    <div style="width: 370px; height: 450px; background-image: url(assets/images/slides/s3.jpg); background-position: center; background-size: cover;"></div>
+                                    </div>
+                                    <div class="title-holder text-center">
+                                        <h2><a href="#"> Med Block</a></h2>
+                                        <div class="overlay-title">
+                                            <h2><a href="#"> Med Block</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single Team Style1-->
+
+                            <!--Start Single Team Style1-->
+                            <div class="single-team-style1">
+                                <div class="img-holder">
+                                    <div class="inner">
+                                    <div style="width: 370px; height: 450px; background-image: url(assets/images/slides/s4.jpg); background-position: center; background-size: cover;"></div>
+                                    </div>
+                                    <div class="title-holder text-center">
+                                        <h2><a href="#"> FIRS Complex In Awka</a></h2>
+                                        <div class="overlay-title">
+                                            <h2><a href="#"> FIRS Complex In Awka</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single Team Style1-->
+
+                            <!--Start Single Team Style1-->
+                            <div class="single-team-style1">
+                                <div class="img-holder">
+                                    <div class="inner">
+                                    <div style="width: 370px; height: 450px; background-image: url(assets/images/slides/s5.jpg); background-position: center; background-size: cover;"></div>
+                                    </div>
+                                    <div class="title-holder text-center">
+                                        <h2><a href="#"> Nnewi Ultra Modern Main Market</a></h2>
+                                        <div class="overlay-title">
+                                            <h2><a href="#"> Nnewi Ultra Modern Main Market</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single Team Style1-->
+                            
+                            <!--Start Single Team Style1-->
+                            <div class="single-team-style1">
+                                <div class="img-holder">
+                                    <div class="inner">
+                                    <div style="width: 370px; height: 450px; background-image: url(assets/images/slides/s6.jpg); background-position: center; background-size: cover;"></div>
+                                    </div>
+                                    <div class="title-holder text-center">
+                                        <h2><a href="#">Anambra State Government House AWKA</a></h2>
+                                        <div class="overlay-title">
+                                            <h2><a href="#">Anambra State Government House AWKA</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single Team Style1-->
+                            
+                            <!--Start Single Team Style1-->
+                            <div class="single-team-style1">
+                                <div class="img-holder">
+                                    <div class="inner">
+                                    <div style="width: 370px; height: 450px; background-image: url(assets/images/slides/s7.jpg); background-position: center; background-size: cover;"></div>
+                                    </div>
+                                    <div class="title-holder text-center">
+                                        <h2><a href="#">Anambra State Ultra Modern City Project</a></h2>
+                                        <div class="overlay-title">
+                                            <h2><a href="#">Anambra State Ultra Modern City Project</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single Team Style1-->
+                            
+                            <!--Start Single Team Style1-->
+                            <div class="single-team-style1">
+                                <div class="img-holder">
+                                    <div class="inner">
+                                    <div style="width: 370px; height: 450px; background-image: url(assets/images/slides/s8.jpg); background-position: center; background-size: cover;"></div>
+                                    </div>
+                                    <div class="title-holder text-center">
+                                        <h2><a href="#">Second Niger bridge 91% complete</a></h2>
+                                        <div class="overlay-title">
+                                            <h2><a href="#">Second Niger bridge 91% complete</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single Team Style1-->
+                            
+                            <!--Start Single Team Style1-->
+                            <div class="single-team-style1">
+                                <div class="img-holder">
+                                    <div class="inner">
+                                    <div style="width: 370px; height: 450px; background-image: url(assets/images/slides/s9.jpg); background-position: center; background-size: cover;"></div>
+                                    </div>
+                                    <div class="title-holder text-center">
+                                        <h2><a href="#">Julius Berger test’s and commissions the street light</a></h2>
+                                        <div class="overlay-title">
+                                            <h2><a href="#">Julius Berger test’s and commissions the street light</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single Team Style1-->
+                            
+                            <!--Start Single Team Style1-->
+                            <div class="single-team-style1">
+                                <div class="img-holder">
+                                    <div class="inner">
+                                    <div style="width: 370px; height: 450px; background-image: url(assets/images/slides/s10.jpg); background-position: center; background-size: cover;"></div>
+                                    </div>
+                                    <div class="title-holder text-center">
+                                        <h2><a href="#"> Our Famous Onitsha Bridge</a></h2>
+                                        <div class="overlay-title">
+                                            <h2><a href="#"> Our Famous Onitsha Bridge</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single Team Style1-->
+                            
+                            <!--Start Single Team Style1-->
+                            <div class="single-team-style1">
+                                <div class="img-holder">
+                                    <div class="inner">
+                                    <div style="width: 370px; height: 450px; background-image: url(assets/images/slides/s11.jpg); background-position: center; background-size: cover;"></div>
+                                    </div>
+                                    <div class="title-holder text-center">
+                                        <h2><a href="#">Governor Soludo Presenting The Budget</a></h2>
+                                        <div class="overlay-title">
+                                            <h2><a href="#">Governor Soludo Presenting The Budget</a></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Single Team Style1-->
+                            
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </div>
-</section> -->
-<!--End Features Style1 Area-->
+        </section>
+        <!--End Team Style1 Area-->
 
 
 <!--Start About Style1 Area-->
@@ -566,10 +708,6 @@ require_once 'components/header.php';
     </div>
 </section>
 <!--End Blog Style1 Area-->
-
-<!--Start event Style1 Area-->
-
-<!--End event Style1 Area-->
 
 <!--Start slogan area-->
 <section class="slogan-area">

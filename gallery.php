@@ -738,6 +738,26 @@ require_once 'components/header.php';
             </div>
             <!--End Single Service Style1-->
 
+            <?php 
+                if ($galleries) {
+                    foreach ($galleries as $gallery) {
+                        extract($gallery); ?>
+
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="single-service-style2">
+                                <div class="img-holder">
+                                    <!-- <img src="assets/images/gallery/24.jpg" alt=""> -->
+                                    <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/<?= $image; ?>); background-position: center; background-size: cover;">
+                                    </div>
+                                </div>
+                                <div class="text-holder text-center">
+                                    <h3><a href="industries-details.html">Gallery</a></h3>
+                                </div>
+                            </div>
+                        </div>
+
+            <?php } } ?>
+
 
 
         </div>
