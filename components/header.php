@@ -6,6 +6,9 @@
     // For Events - Events page
     $events = EXECUTE_QUERY(SELECT_ALL("events", "event_id"));
 
+    // For Devotionals - Devotional page
+    $devotions = EXECUTE_QUERY(SELECT_ALL("devotions", "devotion_id"));
+
     // For all categories
     $categories = EXECUTE_QUERY(SELECT_ALL("categories", "cat_id"));
 
@@ -251,6 +254,8 @@
                                         <li class="<?php if ($headerTitle == "event") : echo "current"; endif; ?>"><a href="events"><span>Events</span></a></li>
 
                                         <li class="<?php if ($headerTitle == "news") : echo "current"; endif; ?>"><a href="news"><span>News</span></a></li>
+
+                                        <li class="<?php if ($headerTitle == "devotion") : echo "current"; endif; ?>"><a href="devotional"><span>Devotional</span></a></li>
 
                                         <li class="<?php if ($headerTitle == "contact") : echo "current"; endif; ?>"><a href="contact"><span>Contact</span></a></li>
 
