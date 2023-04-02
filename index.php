@@ -528,7 +528,7 @@ require_once 'components/header.php';
                     <ul>
                         <li>
                             <div class="img-box">
-                                <img src="assets/images/slides/map.jpg" alt="">
+                                <img src="assets/images/slides/map2.jpeg" alt="">
                             </div>
                         </li>
                     </ul>
