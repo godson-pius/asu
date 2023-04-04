@@ -581,6 +581,71 @@ require_once 'components/header.php';
 </section>
 <!--End About Style1 Area-->
 
+<!-- Start Devotionals -->
+<section class="blog-style2-area">
+    <div class="container">
+        <div class="sec-title text-center">
+            <div class="sub-title">
+                <h3>Today's Devotion</h3>
+            </div>
+            <h2>Devotionals</h2>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="blog-style1__content">
+                    
+
+                         <?php
+                            if ($single_devotions) {
+                                foreach ($single_devotions as $single_devotion) {
+                                    extract($single_devotion); 
+                                    $comment_count = GET_TOTAL_WHERE("comments", "post_id", $devotion_id);
+                                    ?>
+                                    <!--Start Single Blog Style1-->
+                                    <div class="single-blog-style1">
+                                        <div class="single-blog-style1__inner">
+                                            <div class="img-holder">
+                                                <div class="inner">
+                                                    <!-- 270 * 340 -->
+                                                    <div style="width: 270px; height: 340px; background-image: url(assets/images/devotions/<?= $devotion_img; ?>); background-position: center; background-size: cover;">
+                                                    </div>
+                                                </div>
+                                                <div class="date-box">
+                                                    <h6><?= date('d', strtotime($created_at)); ?><br> <span><?= date('M', strtotime($created_at)); ?></span></h6>
+                                                </div>
+                                            </div>
+                                            <div class="text-holder">
+                                    <ul class="meta-info">
+                                        <li>
+                                            <i class="fa fa-book" aria-hidden="true"></i> <a href="#"><?= $devotion_bible; ?></a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-comment-o" aria-hidden="true"></i> <a href="#"><?= $comment_count; ?>
+                                                Comments</a>
+                                        </li>
+                                    </ul>
+                                    <div class="text-inner">
+                                                    <h3 class="blog-title">
+                                                        <a href="devotion-details?devotion=<?= $devotion_slug; ?>"><?= substr($devotion_title, 0, 20); ?>...</a>
+                                                    </h3>
+                                                </div>
+                                                <div class="text">
+                                                    <p><?= substr($devotion_body, 0, 130); ?>...</p>
+                                                </div>
+                                </div>
+                                        </div>
+                                    </div>
+                                    <!--End Single Blog Style1-->
+                        <?php } } ?>
+                 
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End Devotions -->
+
 <!--Start Partner Area-->
 
 <!--End Partner Area-->
@@ -597,21 +662,29 @@ require_once 'components/header.php';
         </div>
         <div class="row">
 
-            <!--Start Single Service Style1-->
-            <div class="col-xl-4 col-lg-4">
-                <div class="single-service-style2">
-                    <div class="img-holder">
-                        <img src="assets/images/services/service-v1-1.jpg" alt="">
+        <?php
+            if ($latest_galleries) {
+                foreach($latest_galleries as $latest_gallery) {
+                    extract($latest_gallery); ?>
+
+                    <!--Start Single Service Style1-->
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="single-service-style2">
+                            <div class="img-holder">
+                            <div style="width: 370px; height: 255px; background-image: url(assets/images/gallery/<?= $image; ?>); background-position: center; background-size: cover;">
+                            </div>
+                            </div>
+                            <div class="text-holder text-center">
+                                <h3><a href="industries-details.html">Gallery</a></h3>
+                            </div>
+                        </div>
                     </div>
-                    <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
-                    </div>
-                </div>
-            </div>
-            <!--End Single Service Style1-->
+                    <!--End Single Service Style1-->
+
+        <?php } } ?>
 
             <!--Start Single Service Style1-->
-            <div class="col-xl-4 col-lg-4">
+            <!-- <div class="col-xl-4 col-lg-4">
                 <div class="single-service-style2">
                     <div class="img-holder">
                         <img src="assets/images/services/service-v1-2.jpg" alt="">
@@ -620,11 +693,11 @@ require_once 'components/header.php';
                         <h3><a href="industries-details.html">Gallery</a></h3>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!--End Single Service Style1-->
 
             <!--Start Single Service Style1-->
-            <div class="col-xl-4 col-lg-4">
+            <!-- <div class="col-xl-4 col-lg-4">
                 <div class="single-service-style2">
                     <div class="img-holder">
                         <img src="assets/images/services/service-v1-3.jpg" alt="">
@@ -633,7 +706,7 @@ require_once 'components/header.php';
                         <h3><a href="industries-details.html">Gallery</a></h3>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!--End Single Service Style1-->
 
         </div>

@@ -9,11 +9,17 @@
     // For Devotionals - Devotional page
     $devotions = EXECUTE_QUERY(SELECT_ALL("devotions", "devotion_id"));
 
+    // For single devotions - index page
+    $single_devotions = EXECUTE_QUERY(SELECT_ALL_LIMIT("devotions", "devotion_id", 0, 1));
+
     // For all categories
     $categories = EXECUTE_QUERY(SELECT_ALL("categories", "cat_id"));
 
     // For all galleries
     $galleries = EXECUTE_QUERY(SELECT_ALL("galleries", "gallery_id"));
+
+    // For limited gallery selection
+    $latest_galleries = EXECUTE_QUERY(SELECT_ALL_LIMIT("galleries", "gallery_id", 0, 3));
 ?>
 
 

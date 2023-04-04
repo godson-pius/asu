@@ -123,6 +123,19 @@
             </ul>
         </li><!-- End Contacts Nav -->
 
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#categories" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-app-indicator"></i><span>Categories</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="categories" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="./add-category">
+                        <i class="bi bi-circle"></i><span>Add Category</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Contacts Nav -->
+
     <!-- End Contacts Nav -->
 
 
