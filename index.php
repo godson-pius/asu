@@ -144,7 +144,7 @@ require_once 'components/header.php';
                         </div>
                         <div class="big-title">
                             <h2>
-                                The Larges Automobile <br> Market In Africa
+                                The Largest Automobile <br> Market In Africa
                             </h2>
                         </div>
                         <div class="btns-box">
