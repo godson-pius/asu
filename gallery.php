@@ -1,5 +1,5 @@
 <?php
-$headerTitle = "gallery";
+$headerTitle = "about";
 require_once 'components/header.php';
 ?>
 
@@ -52,7 +52,7 @@ require_once 'components/header.php';
                         <img src="assets/images/services/service-v1-1.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@ require_once 'components/header.php';
                         <img src="assets/images/services/service-v1-2.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@ require_once 'components/header.php';
                         <img src="assets/images/services/service-v1-3.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ require_once 'components/header.php';
                         <img src="assets/images/services/ols.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@ require_once 'components/header.php';
                         <img src="assets/images/services/old2.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@ require_once 'components/header.php';
                         <img src="assets/images/services/img2.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/1.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -143,7 +143,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/2.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/3.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/4.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -182,7 +182,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/5.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -195,7 +195,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/5.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -208,7 +208,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/6.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -221,7 +221,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/7.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -234,7 +234,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/8.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -247,7 +247,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/9.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -260,7 +260,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/10.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -273,7 +273,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/11.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -286,7 +286,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/12.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -299,7 +299,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/13.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -313,7 +313,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/14.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -327,7 +327,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/15.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -340,7 +340,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/16.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -354,7 +354,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/17.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -367,7 +367,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/18.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -380,7 +380,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/19.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -393,7 +393,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/20.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -406,7 +406,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/22.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -419,7 +419,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/23.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -432,7 +432,7 @@ require_once 'components/header.php';
                         <img src="assets/images/gallery/24.jpg" alt="">
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -447,7 +447,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -462,7 +462,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -477,7 +477,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -492,7 +492,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -507,7 +507,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -522,7 +522,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -537,7 +537,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -552,7 +552,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -567,7 +567,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -582,7 +582,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -597,7 +597,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -612,7 +612,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -627,7 +627,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -642,7 +642,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -657,7 +657,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -672,7 +672,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -687,7 +687,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -702,7 +702,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -717,7 +717,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -732,7 +732,7 @@ require_once 'components/header.php';
                         </div>
                     </div>
                     <div class="text-holder text-center">
-                        <h3><a href="industries-details.html">Gallery</a></h3>
+                        <h3><a href="">Gallery</a></h3>
                     </div>
                 </div>
             </div>
@@ -751,7 +751,7 @@ require_once 'components/header.php';
                                     </div>
                                 </div>
                                 <div class="text-holder text-center">
-                                    <h3><a href="industries-details.html">Gallery</a></h3>
+                                    <h3><a href="">Gallery</a></h3>
                                 </div>
                             </div>
                         </div>

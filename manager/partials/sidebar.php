@@ -55,7 +55,7 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#members" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-microsoft-teams"></i><span>Members</span><i class="bi bi-chevron-down ms-auto"></i>
+                <i class="bi bi-people"></i><span>Members</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="members" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
@@ -74,7 +74,7 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#teams" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-microsoft-teams"></i><span>Events</span><i class="bi bi-chevron-down ms-auto"></i>
+                <i class="bi bi-calendar4-event"></i><span>Events</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="teams" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
@@ -112,7 +112,7 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#gallery" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-app-indicator"></i><span>Gallery</span><i class="bi bi-chevron-down ms-auto"></i>
+                <i class="bi bi-images"></i><span>Gallery</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="gallery" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
@@ -131,6 +131,19 @@
                 <li>
                     <a href="./add-category">
                         <i class="bi bi-circle"></i><span>Add Category</span>
+                    </a>
+                </li>
+            </ul>
+        </li><!-- End Contacts Nav -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#sites" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-music-note-list"></i><span>Sites & Sounds</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="sites" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="./add-site">
+                        <i class="bi bi-circle"></i><span>Add Site</span>
                     </a>
                 </li>
             </ul>

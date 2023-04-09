@@ -20,6 +20,9 @@
 
     // For limited gallery selection
     $latest_galleries = EXECUTE_QUERY(SELECT_ALL_LIMIT("galleries", "gallery_id", 0, 3));
+
+    // For all sites and sounds
+    $sites = EXECUTE_QUERY(SELECT_ALL("sites", "site_id"));
 ?>
 
 
@@ -253,6 +256,7 @@
                                                 <li><a href="anambra-state">About Anambra State</a></li>
                                                 <li><a href="about">About ASU Uk & Ireland</a></li>
                                                 <li><a href="executives">Our Executives</a></li>
+                                                <li><a href="sites-and-sounds">Site’s And Sounds Of Anambra State</a></li>
                                                 <li><a href="gallery">Gallery</a></li>
                                             </ul>
                                         </li>
