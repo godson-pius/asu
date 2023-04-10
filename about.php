@@ -41,7 +41,7 @@ require_once 'components/header.php';
                     <div class="col-xl-7">
                         <div class="about-style3__img-box">
                             <div class="inner">
-                                <img src="assets/images/about/about-style3-img.jpg" alt="">
+                                <img src="assets/images/about/about.jpg" alt="">
                             </div>
                             <div class="about-style3-experience">
                                 <p>There's super <span>Strength</span> in unity</p>
