@@ -87,8 +87,10 @@ if (isset($_GET['event'])) {
                                     <div class="img-holder">
                                         <div class="inner">
                                             <!-- 770 * 420 -->
-                                            <div style="width: 770px; height: 420px; background-image: url(assets/images/events/<?= $event_img; ?>); background-position: center; background-size: cover;">
-                                                    </div>
+                                            <img src="assets/images/events/<?= $event_img; ?>" alt="event image">
+
+                                            <!-- <div style="width: 770px; height: 420px; background-image: url(assets/images/events/<?= $event_img; ?>); background-position: center; background-size: cover;">
+                                                    </div> -->
                                         </div>
                                         <div class="date-box">
                                                     <h6><?= date('d', strtotime($event_date)); ?><br> <span><?= date('M', strtotime($event_date)); ?></span></h6>

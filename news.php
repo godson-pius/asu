@@ -50,7 +50,7 @@ require_once 'components/header.php';
                             <div class="single-blog-style1__inner">
                                 <div class="img-holder">
                                     <div class="inner">
-                                    <div style="width: 270px; height: 340px; background-image: url(assets/images/news/<?= $post_img; ?>); background-position: center; background-size: cover;">
+                                    <div style="width: 370px; height: 340px; background-image: url(assets/images/news/<?= $post_img; ?>); background-position: center; background-size: cover;">
                                                     </div>
                                         
                                     </div>

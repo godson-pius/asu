@@ -137,7 +137,7 @@
                                                 <option value="married">Married</option>
                                                     <option value="not married">Not Married</option>
                                                     <option value="divorced">Divorced</option>
-                                                    <option value="windowed">Windowed</option>
+                                                    <option value="windowed">Widowed</option>
                                                     <option value="other">Other</option>
                                                 </select>
                                             </div>

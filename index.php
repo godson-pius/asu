@@ -19,7 +19,7 @@ require_once 'components/header.php';
                         </div>
                         <div class="big-title">
                             <h2>
-                                United Kingdom &<br> Ireland <span>Union</span>
+                                United Kingdom &<br> Ireland
                             </h2>
                         </div>
                         <div class="btns-box">

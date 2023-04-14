@@ -86,9 +86,10 @@ if (isset($_POST['submit_comment'])) {
                                 <div class="single-blog-style1__inner">
                                     <div class="img-holder">
                                         <div class="inner">
+                                            <img src="assets/images/news/<?= $post_img; ?>" alt="News Image">
                                             <!-- 770 * 420 -->
-                                            <div style="width: 770px; height: 420px; background-image: url(assets/images/news/<?= $post_img; ?>); background-position: center; background-size: cover;">
-                                                    </div>
+                                            <!-- <div style="width: 770px; height: 420px; background-image: url(assets/images/news/<?= $post_img; ?>); background-position: center; background-size: cover;">
+                                                    </div> -->
                                         </div>
                                         <div class="date-box">
                                                     <h6><?= date('d', strtotime($created_at)); ?><br> <span><?= date('M', strtotime($created_at)); ?></span></h6>

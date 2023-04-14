@@ -62,7 +62,7 @@
     width: 100%;
     height: 100%;
     content: "";
-    background-color: var(--thm-black);
+    /* background-color: var(--thm-black); */
     opacity: 0.70;
     z-index: -1;
 }
