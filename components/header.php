@@ -212,7 +212,7 @@
                     <div class="header-left">
                         <div class="main-logo-box">
                             <a href="index">
-                                <img src="assets/images/resources/logo.png" alt="Awesome Logo" title="ASU Logo" width="170">
+                                <img src="assets/images/resources/logo.png" alt="Awesome Logo" title="ASU Logo" width="90">
                             </a>
                         </div>
                         <div class="header-social-link">
