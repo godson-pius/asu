@@ -48,7 +48,7 @@ require_once 'components/header.php';
                             </h2>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="about">
                                         <span class="txt">
                                             discover more<i class="icon-refresh arrow"></i>
                                         </span>
@@ -73,7 +73,7 @@ require_once 'components/header.php';
                             </h2>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="about">
                                         <span class="txt">
                                             discover more<i class="icon-refresh arrow"></i>
                                         </span>
@@ -98,7 +98,7 @@ require_once 'components/header.php';
                             </h2>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="about">
                                         <span class="txt">
                                             discover more<i class="icon-refresh arrow"></i>
                                         </span>
@@ -123,7 +123,7 @@ require_once 'components/header.php';
                             </h2>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="about">
                                         <span class="txt">
                                             discover more<i class="icon-refresh arrow"></i>
                                         </span>
@@ -148,7 +148,7 @@ require_once 'components/header.php';
                             </h2>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="about">
                                         <span class="txt">
                                             discover more<i class="icon-refresh arrow"></i>
                                         </span>
@@ -173,7 +173,7 @@ require_once 'components/header.php';
                             </h2>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="about">
                                         <span class="txt">
                                             discover more<i class="icon-refresh arrow"></i>
                                         </span>
@@ -198,7 +198,7 @@ require_once 'components/header.php';
                             </h2>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="about">
                                         <span class="txt">
                                             discover more<i class="icon-refresh arrow"></i>
                                         </span>
@@ -223,7 +223,7 @@ require_once 'components/header.php';
                             </h2>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="about">
                                         <span class="txt">
                                             discover more<i class="icon-refresh arrow"></i>
                                         </span>
@@ -248,7 +248,7 @@ require_once 'components/header.php';
                             </h2>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="about">
                                         <span class="txt">
                                             discover more<i class="icon-refresh arrow"></i>
                                         </span>
@@ -273,7 +273,7 @@ require_once 'components/header.php';
                             </h2>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="about">
                                         <span class="txt">
                                             discover more<i class="icon-refresh arrow"></i>
                                         </span>
@@ -298,7 +298,7 @@ require_once 'components/header.php';
                             </h2>
                         </div>
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="about">
                                         <span class="txt">
                                             discover more<i class="icon-refresh arrow"></i>
                                         </span>
@@ -824,7 +824,7 @@ require_once 'components/header.php';
     <div class="auto-container">
         <div class="home1-page-map-outer">
             <!--Map Canvas-->
-            <div class="map-canvas" data-zoom="12" data-lat="51.509865" data-lng="-0.118092"
+            <div class="map-canvas" data-zoom="12" data-lat="51.507351" data-lng="-0.127758"
                  data-type="roadmap" data-hue="#ffc400" data-title="Envato"
                  data-icon-path="assets/images/icon/map-marker.png"
                  data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">

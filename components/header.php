@@ -217,17 +217,17 @@
                         </div>
                         <div class="header-social-link">
                             <ul class="clearfix">
-                                <li>
+                                <!-- <li>
                                     <a href="#"><i class="icon-twitter"></i></a>
-                                </li>
+                                </li> -->
                                 <li>
-                                    <a href="#"><i class="icon-facebook"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100092726475230" target="_blank"><i class="icon-facebook"></i></a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="#"><i class="icon-pinterest"></i></a>
-                                </li>
+                                </li> -->
                                 <li>
-                                    <a href="#"><i class="icon-instagram"></i></a>
+                                    <a href="https://www.instagram.com/invites/contact/?i=1or5kzvwyf6a7&utm_content=rbfs4j3" target="_blank"><i class="icon-instagram"></i></a>
                                 </li>
                             </ul>
                         </div>
