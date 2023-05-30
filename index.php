@@ -565,7 +565,7 @@ require_once 'components/header.php';
                         </div>
 
                         <div class="service-style1__top-button mt-5">
-                        <a class="btn-one" href="contact.html">
+                        <a class="btn-one" href="about">
                                     <span class="txt">
                                         Know more<i class="icon-right-arrow arrow"></i>
                                     </span>
