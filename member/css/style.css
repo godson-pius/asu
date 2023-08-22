@@ -5406,7 +5406,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active::after {
 }
 
 #login-page1 body {
-  background: url(../assets/images/background/login-register.jpg);
+  background: url(https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2hpdGUlMjAlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
