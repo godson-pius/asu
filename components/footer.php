@@ -142,7 +142,7 @@
         <div class="container">
             <div class="bottom-inner">
                 <div class="copyright">
-                    <p>Copyright &copy; <?= date("Y"); ?> <a href="index.html">ASU Uk.</a> All Rights Reserved.</p>
+                    <p>Copyright &copy; <?= date("Y"); ?> <a href="index">ASU Uk.</a> All Rights Reserved.</p>
                 </div>
             </div>
         </div>

@@ -316,7 +316,7 @@
                 <div class="clearfix">
                     <!--Logo-->
                     <div class="logo float-left">
-                        <a href="index.html" class="img-responsive">
+                        <a href="index" class="img-responsive">
                             <img src="assets/images/resources/logo.png" alt="Sticky ASU Logo" title="" width="100">
                         </a>
                     </div>
@@ -337,7 +337,7 @@
             <div class="menu-backdrop"></div>
             <div class="close-btn"><span class="icon fa fa-times-circle"></span></div>
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/resources/logo.png"
+                <div class="nav-logo"><a href="index"><img src="assets/images/resources/logo.png"
                                                                 alt="Mobile ASU Logo" title="" width="160"></a></div>
                 <div class="menu-outer">
                     <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->

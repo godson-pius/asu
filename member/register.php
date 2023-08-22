@@ -67,7 +67,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="logo text-center">
-                                    <a href="index.html">
+                                    <a href="../index">
                                         <img src="../assets/images/resources/logo.png" alt="Logo" width="200">
                                     </a>
                                 </div>
